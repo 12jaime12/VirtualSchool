@@ -1,15 +1,11 @@
-import "./Register.css"
+import "./Register.css";
 
-import UploadFile from "../../components/UploadFile/UploadFile"
+import UploadFile from "../../components/UploadFile/UploadFile";
 
-import React from 'react'
+import React from "react";
 
 const Register = () => {
   return (
-    <div>Register</div>
-  )
-
-return (
     <>
       <div className="form-wrap">
         <h1>Acceder</h1>
@@ -28,7 +24,7 @@ return (
               usuario
             </label>
           </div>
-          
+
           <div className="password_container form-group">
             <input
               className="input_user"
@@ -72,13 +68,13 @@ return (
                 name="sexo"
                 id="femenino"
                 value="femenino"
-                {...Register("gender",{ required: true })}
+                {...Register("gender", { required: true })}
               />
               <label htmlFor="femenino" className="label-radio femenino">
                 Femenino
               </label>
             </div>
-            
+
             <UploadFile />
           </div>
 
@@ -87,14 +83,14 @@ return (
               className="btn"
               type="submit"
               disabled={send}
-              style={{ background: send ? "#49c1a388" : "#2f7a67" }}
+              style={{ background: send ? "#001d86" : "#001d86b1" }}
             >
               Registrar
             </button>
           </div>
           <p className="bottom-text">
             <small>
-              Haciendo click en el botón de Acceder, estás de acuerdo con {" "}
+              Haciendo click en el botón de Acceder, estás de acuerdo con{" "}
               <Link className="anchorCustom">Términos y Condiciones</Link> y{" "}
               <Link className="anchorCustom">Política de Privacidad</Link>.
             </small>
@@ -110,4 +106,4 @@ return (
   );
 };
 
-export default Register
+export default Register;

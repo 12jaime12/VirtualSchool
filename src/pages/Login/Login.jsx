@@ -39,10 +39,10 @@ const Login = () => {
               className="btn"
               type="submit"
               disabled={send}
-              style={{ background: send ? "" : "" }}>
+              style={{ background: send ? "#001d86" : "#001d86b1" }}
+            >
               Acceso
-            </button>{" "}
-            {/*falta color*/}
+            </button>
           </div>
           <p className="buttom-text">
             <small>

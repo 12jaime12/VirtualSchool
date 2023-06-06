@@ -1,10 +1,8 @@
 import "./CheckCode.css";
 
 const CheckCode = () => {
-
-
   return (
-  <>
+    <>
       <div className="form-wrap">
         <h1>Verifica tu código de registro</h1>
         <p>Escribe el código enviado a tu correo electrónico</p>
@@ -29,7 +27,7 @@ const CheckCode = () => {
               className="btn"
               type="submit"
               disabled={send}
-              style={{ background: send ? "#49c1a388" : "#49c1a2" }}
+              style={{ background: send ? "#001d86" : "#001d86b1" }}
             >
               Código de verificación
             </button>
@@ -39,7 +37,7 @@ const CheckCode = () => {
               id="btnResend"
               className="btn"
               disabled={send}
-              style={{ background: send ? "#49c1a388" : "#49c1a2" }}
+              style={{ background: send ? "#001d86" : "#001d86b1" }}
               onClick={() => handleReSend()}
             >
               Reenviar código
@@ -48,8 +46,8 @@ const CheckCode = () => {
 
           <p className="bottom-text">
             <small>
-            Si el código introducido no es correcto ❌, su usuario será eliminado de la
-               base de datos y tendrá que registrarse de nuevo.{" "}
+              Si el código introducido no es correcto ❌, su usuario será
+              eliminado de la base de datos y tendrá que registrarse de nuevo.{" "}
             </small>
           </p>
         </form>

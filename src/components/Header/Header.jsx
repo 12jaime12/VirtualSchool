@@ -13,9 +13,10 @@ const Header = () => {
             className="logo"
           />
         </div>
+        <div className="iconoUsuario"></div>
       </header>
     </>
   );
 };
 
-export default Header
+export default Header;
