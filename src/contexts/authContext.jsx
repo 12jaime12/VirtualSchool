@@ -11,3 +11,7 @@ export const AuthContextProvider = ({ children }) => {
     setUser(() => parseData);
   };
 };
+
+export const useAuth = () => {
+  return UseContext(AuthContext);
+};

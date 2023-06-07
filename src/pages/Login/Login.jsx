@@ -1,6 +1,33 @@
 import "./Login.css";
+import { login } from "../../service/API_proyect/user.service";
+import { useAuth } from "../../contexts/authContext";
+import { Link, Navigate } from "react-router-dom";
+import { useEffect, useState } from "react";
 
 const Login = () => {
+  const [res, setRes] = useState({});
+  const [send, setSend] = useState(false);
+  const [loginOk, setLoginOk] = useState(false);
+  const { userlogin } = useAuth();
+
+  const formSubmit = async (formData) => {
+    setSend(true);
+    setRes(await loginUser(formData));
+    setSend(false);
+  };
+
+  useEffect(() => {
+    useLoginError(res, setLoginOk, userlogin);
+  }, [res]);
+
+  if (loginOk) {
+    if (res.data.user.check == false) {
+      return <Navigate to="/verifyCode" />;
+    } else {
+      return <Navigate to="/dashboard" />;
+    }
+  }
+
   return (
     <>
       <div className="form-container">
@@ -39,8 +66,7 @@ const Login = () => {
               className="btn"
               type="submit"
               disabled={send}
-              style={{ background: send ? "#001d86" : "#001d86b1" }}
-            >
+              style={{ background: send ? "#001d86" : "#001d86b1" }}>
               Acceso
             </button>
           </div>
