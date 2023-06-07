@@ -1,10 +1,49 @@
 import "./Register.css";
-
+import { useForm } from "react-hook-form";
+import { useEffect, useState } from "react";
 import UploadFile from "../../components/UploadFile/UploadFile";
+import useRegisterError from "../hooks/useRegisterError";
 
-import React from "react";
+
 
 const Register = () => {
+  const { bridgeData } = useAuth();
+  const { register, handleSubmit } = useForm();
+  const [res, setRes] = useState({});
+  const [registerOk, setRegisterOk] = useState(false);
+  const [send, setSend] = useState(false);
+
+  const formSubmit = async (formData) => {
+    const inputfile = document.getElementById("file-upload").files;
+    let customFormData;
+
+    if (inputfile.length !== 0) {
+      customFormData = { ...formData, image: inputfile[0] };
+      setSend(true);
+      setRes(await registerUser(customFormData));
+      setSend(false);
+    } else {
+      customFormData = { ...formData };
+      setSend(true);
+      setRes(await registerUser(customFormData));
+      setSend(false);
+    }
+  };
+
+  useEffect(() => {
+    useRegisterError(res, setRegisterOk);
+    bridgeData("ALLUSER");
+  }, [res]);
+
+  if (registerOk) {
+    return <Navigate to="/verifyCode" />;
+  }
+
+
+
+
+
+
   return (
     <>
       <div className="form-wrap">
