@@ -9,3 +9,20 @@ export const registerUser = async (formData) => {
       return error;
     });
 };
+//---------------------------------------------verify code------------------------------
+export const checkCode = async (formData) => {
+  return API.post("/users/check", formData)
+    .then((res) => res)
+    .catch((error) => {
+      return error;
+    });
+};
+
+//! -------------------------login---------------------------------------
+export const loginUser = async (formData) => {
+  return API.post("/users/login", formData)
+    .then((res) => res)
+    .catch((error) => {
+      return error;
+    });
+};
