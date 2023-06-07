@@ -1,10 +1,12 @@
 import "./Login.css";
-import { login } from "../../service/API_proyect/user.service";
+import { useForm } from "react-hook-form";
 import { useAuth } from "../../contexts/authContext";
 import { Link, Navigate } from "react-router-dom";
 import { useEffect, useState } from "react";
+import { login } from "../../service/API_proyect/user.service";
 
 const Login = () => {
+  const { register, handleSubmit } = useForm();
   const [res, setRes] = useState({});
   const [send, setSend] = useState(false);
   const [loginOk, setLoginOk] = useState(false);
@@ -12,7 +14,7 @@ const Login = () => {
 
   const formSubmit = async (formData) => {
     setSend(true);
-    setRes(await loginUser(formData));
+    setRes(await login(formData));
     setSend(false);
   };
 
@@ -66,7 +68,8 @@ const Login = () => {
               className="btn"
               type="submit"
               disabled={send}
-              style={{ background: send ? "#001d86" : "#001d86b1" }}>
+              style={{ background: send ? "#001d86" : "#001d86b1" }}
+            >
               Acceso
             </button>
           </div>

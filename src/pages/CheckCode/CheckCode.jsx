@@ -1,6 +1,64 @@
+import { checkCode } from "../../service/API_proyect/user.service";
 import "./CheckCode.css";
+import { useForm } from "react-hook-form";
+import { useAuth } from "../contexts/authContext";
+import { useEffect, useState } from "react";
 
 const CheckCode = () => {
+  const { allUser, login, setUser } = useAuth();
+  const { register, handleSubmit } = useForm();
+  const [res, setRes] = useState({});
+  const [send, setSend] = useState(false);
+  const [deleteUser, setDeleteUser] = useState(false);
+  const [okCheck, setOkCheck] = useState(false);
+
+  const formSubmit = async (formData) => {
+    const userlocal = localStorage.getItem("user");
+
+    if (userlocal == null) {
+      const custFormData = {
+        confirmationCode: parseInt(formData.confirmationCode),
+      };
+      const id = allUser.data.user._id;
+      setSend(true);
+      setRes(await checkCode(custFormData, id));
+      setSend(false);
+    } else {
+      const parse = JSON.parse(userlocal);
+      const custFormData = {
+        confirmationCode: parseInt(formData.confirmationCode),
+      };
+      const id = parse._id;
+      setSend(true);
+      setRes(await checkCode(custFormData, id));
+      setSend(false);
+    }
+  };
+  useEffect(() => {
+    useCheckCodeError(res, setDeleteUser, setOkCheck);
+  }, [res]);
+
+  if (deleteUser) {
+    return <Navigate to="/register" />;
+  }
+  if (okCheck) {
+    if (!localStorage.getItem("user")) {
+      useAutoLogin(allUser, userlogin);
+    } else {
+      const currentUser = localStorage.getItem("user");
+      const parseCurrentUser = JSON.parse(currentUser);
+      const customUser = {
+        ...parseCurrentUser,
+        check: true,
+      };
+      const customUserString = JSON.stringify(customUser);
+
+      setUser(customUser);
+      localStorage.setItem("user", customUserString);
+
+      return <Navigate to="/dashboard" />;
+    }
+  }
   return (
     <>
       <div className="form-wrap">

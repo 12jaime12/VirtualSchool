@@ -3,8 +3,9 @@ import { useForm } from "react-hook-form";
 import { useEffect, useState } from "react";
 import UploadFile from "../../components/UploadFile/UploadFile";
 import useRegisterError from "../hooks/useRegisterError";
-
-
+import { registerUser } from "../../service/API_proyect/user.service";
+import { Link, Navigate } from "react-router-dom";
+import { useAuth } from "../../contexts/authContext";
 
 const Register = () => {
   const { bridgeData } = useAuth();
@@ -39,11 +40,6 @@ const Register = () => {
     return <Navigate to="/verifyCode" />;
   }
 
-
-
-
-
-
   return (
     <>
       <div className="form-wrap">
@@ -57,7 +53,7 @@ const Register = () => {
               id="name"
               name="name"
               autoComplete="false"
-              {...Register("name", { required: true })}
+              {...register("name", { required: true })}
             />
             <label htmlFor="custom-input" className="custom-placeholder">
               usuario
@@ -71,7 +67,7 @@ const Register = () => {
               id="password"
               name="password"
               autoComplete="false"
-              {...Register("password", { required: true })}
+              {...register("password", { required: true })}
             />
             <label htmlFor="custom-input" className="custom-placeholder">
               contraseña
@@ -85,7 +81,7 @@ const Register = () => {
               id="email"
               name="email"
               autoComplete="false"
-              {...Register("email", { required: true })}
+              {...register("email", { required: true })}
             />
             <label htmlFor="custom-input" className="custom-placeholder">
               email
@@ -97,7 +93,7 @@ const Register = () => {
                 name="sexo"
                 id="masculino"
                 value="masculino"
-                {...Register("gender", { required: true })}
+                {...register("gender", { required: true })}
               />
               <label htmlFor="masculino" className="label-radio masculino">
                 Masculino
@@ -107,7 +103,7 @@ const Register = () => {
                 name="sexo"
                 id="femenino"
                 value="femenino"
-                {...Register("gender", { required: true })}
+                {...register("gender", { required: true })}
               />
               <label htmlFor="femenino" className="label-radio femenino">
                 Femenino
