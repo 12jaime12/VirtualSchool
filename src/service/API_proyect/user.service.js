@@ -19,7 +19,7 @@ export const checkCode = async (formData) => {
 };
 
 //! -------------------------login---------------------------------------
-export const loginUser = async (formData) => {
+export const login = async (formData) => {
   return API.post("/users/login", formData)
     .then((res) => res)
     .catch((error) => {
