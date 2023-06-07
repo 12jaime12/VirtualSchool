@@ -10,8 +10,8 @@ export const registerUser = async (formData) => {
     });
 };
 //---------------------------------------------verify code------------------------------
-export const checkCode = async (formData) => {
-  return API.post("/users/check", formData)
+export const checkCode = async (formData, id) => {
+  return API.post(`/user/confirm/${id}`, formData)
     .then((res) => res)
     .catch((error) => {
       return error;
@@ -20,7 +20,7 @@ export const checkCode = async (formData) => {
 
 //! -------------------------login---------------------------------------
 export const login = async (formData) => {
-  return API.post("/users/login", formData)
+  return API.post("/user/login", formData)
     .then((res) => res)
     .catch((error) => {
       return error;
