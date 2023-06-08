@@ -77,16 +77,14 @@ const Login = () => {
           <p className="buttom-text">
             <small>
               ¿No recuerdas tu contraseña?
-              <Link to="/forgotpassword" className="anchorCustom">
-                Cambio de contraseña
-              </Link>
+              <Link to="/forgotpassword" className="anchorCustom"> Cambio de contraseña</Link>
             </small>
           </p>
         </form>
       </div>
       <div className="footer-form">
         <p className="parrafoLogin">
-          ¿Aún no estás registrado?<Link to="/register">Registrate aquí</Link>
+          ¿Aún no estás registrado?<Link to="/register"> Regístrate aquí</Link>
         </p>
       </div>
     </>
