@@ -26,3 +26,11 @@ export const login = async (formData) => {
       return error;
     });
 };
+//---------------------------autologin-----------------------
+export const autoLoginUser = async (formData) => {
+  return API.post("/user/login/autologin", formData)
+    .then((res) => res)
+    .catch((error) => {
+      return error;
+    });
+};

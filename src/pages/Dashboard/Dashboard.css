@@ -1,0 +1,18 @@
+.dashboard{
+    display: flex;
+} 
+.options{
+    background-color: #001d86;
+    width: 30vw;
+    height: 80vh;
+    display: flex;
+    justify-content: center;
+    padding: 3rem;
+}
+.options p{
+    color: white;
+}
+.content{
+    width: 70vw;
+    height: 80vh;
+}

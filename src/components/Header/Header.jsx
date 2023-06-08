@@ -35,6 +35,9 @@ const Header = () => {
                       <li>
                         <a onClick={() => logout()}>Cerrar Sesión</a>
                       </li>
+                      <li>
+                        <a>Color Change</a>
+                      </li>
                     </ul>
                   </li>
                 </ul>

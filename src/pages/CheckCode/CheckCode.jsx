@@ -4,9 +4,11 @@ import { useForm } from "react-hook-form";
 import { useAuth } from "../../contexts/authContext";
 import React, { useEffect, useState } from "react";
 import useCheckCode from "../../hooks/useCheckCode";
+import useAutoLogin from "../../hooks/useAutoLogin";
+import { Navigate } from "react-router-dom";
 
 const CheckCode = () => {
-  const { allUser, login, setUser } = useAuth();
+  const { allUser, userlogin, setUser } = useAuth();
   const { register, handleSubmit } = useForm();
   const [res, setRes] = useState({});
   const [send, setSend] = useState(false);
@@ -31,7 +33,8 @@ const CheckCode = () => {
       const custFormData = {
         code: parseInt(formData.code),
       };
-      const id = parse._id;
+      const id = parse.id;
+      console.log(parse);
       setSend(true);
       console.log(id);
       setRes(await checkCode(custFormData, id));

@@ -4,11 +4,12 @@ const useLoginError = (res, setLoginOk, userlogin) => {
   if (res?.status == 200) {
     const dataCustom = {
       token: res.data.token,
-      id: res.data._id,
+      id: res.data.user._id,
       user: res.data.user.name,
       email: res.data.user.email,
       image: res.data.user.image,
       check: res.data.user.check,
+      hola: "login",
     };
 
     const dataString = JSON.stringify(dataCustom);
