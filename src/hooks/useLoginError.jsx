@@ -1,4 +1,4 @@
-import Swal from "";
+import Swal from "sweetalert2";
 
 const useLoginError = (res, setLoginOk, userlogin) => {
   if (res?.status == 200) {

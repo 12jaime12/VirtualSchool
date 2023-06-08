@@ -7,6 +7,7 @@ import { AuthContextProvider } from "./contexts/authContext.jsx";
 import Register from "./pages/Register/Register.jsx";
 import Home from "./pages/Home/Home.jsx";
 import CheckCode from "./pages/CheckCode/CheckCode.jsx";
+import Login from "./pages/Login/Login.jsx";
 
 ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
@@ -15,6 +16,7 @@ ReactDOM.createRoot(document.getElementById("root")).render(
         <Routes>
           <Route path="/" element={<App />}>
             <Route index element={<Home />} />
+            <Route path="/login" element={<Login />} />
             <Route path="/register" element={<Register />} />
             <Route path="/verifyCode" element={<CheckCode />} />
           </Route>

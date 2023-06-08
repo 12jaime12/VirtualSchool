@@ -2,8 +2,9 @@ import "./Login.css";
 import { useForm } from "react-hook-form";
 import { useAuth } from "../../contexts/authContext";
 import { Link, Navigate } from "react-router-dom";
-import { useEffect, useState } from "react";
+import React, { useEffect, useState } from "react";
 import { login } from "../../service/API_proyect/user.service";
+import useLoginError from "../../hooks/useLoginError";
 
 const Login = () => {
   const { register, handleSubmit } = useForm();
@@ -35,7 +36,7 @@ const Login = () => {
       <div className="form-container">
         <h1>Acceso</h1>
         <p>Bienvenidos a Virtual School</p>
-        <form onSummit={handleSubmit(formSubmit)}>
+        <form onSubmit={handleSubmit(formSubmit)}>
           <div className="email-container form-group">
             <input
               className="input-user"
