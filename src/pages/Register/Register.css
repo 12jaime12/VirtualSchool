@@ -70,7 +70,7 @@ a {
   width: 100%;
   padding: 10px;
   margin-top: 25px;
-  background: #001d86;
+  background: #001d86B1;
   color: #fff;
   cursor: pointer;
   border-radius: 5px;
@@ -94,12 +94,13 @@ a {
 
 .form-wrap .bottom-text a:hover {
   text-decoration: underline;
+  color: #001d86;
 }
 
 .parrafoLogin {
   text-align: center;
   margin-top: 15px;
-  color: #001d86
+  color: #001d86;
 }
 
 footer a {
@@ -152,6 +153,12 @@ a {
   color: #001d86;
 }
 
-.anchorCustom {
+a:hover{
   color: #001d86;
+  text-decoration: underline;
+
+}
+
+.anchorCustom {
+  color:#001d86;
 }

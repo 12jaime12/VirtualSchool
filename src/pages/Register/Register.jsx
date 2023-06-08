@@ -127,7 +127,7 @@ const Register = () => {
           </div>
           <p className="bottom-text">
             <small>
-              Haciendo click en el botón de Acceder, estás de acuerdo con{" "}
+              Haciendo click en el botón de Registrar, estás de acuerdo con{" "}
               <Link className="anchorCustom">Términos y Condiciones</Link> y{" "}
               <Link className="anchorCustom">Política de Privacidad</Link>.
             </small>
