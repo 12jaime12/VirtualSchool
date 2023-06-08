@@ -1,12 +1,70 @@
 header{
     width: 100vw;
-    min-height: 10vh;
+    max-height: 10vh;
     background-color: #001d86;
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
 }
 .logoVirtualSchool img{
     width: 60px;
-    
+    margin-left: 3rem;
+}
+.iconoUsuario img{
+    width: 100px;
+    border: 2px solid white;
+    padding: 5px;
+    border-radius: 50px;
+    margin-right: 3rem;
+	position: relative;
+	bottom: -3rem;
+	background-color: #001d86;
+}
+header a{
+    color: white;
+}
+nav {
+	margin: 50px 0;
+	background-color: #001d86;
+}
+nav ul {
+	padding: 0;
+    margin: 0;
+	list-style: none;
+	position: relative;
+}
+nav ul li {
+	display:inline-block;
+	background-color: #001d86;
+}
+nav ul li ul {
+    border: 3px solid white;
+}
+nav a {
+	display:block;
+	padding:0 10px;	
+	color:#FFF;
+	font-size:20px;
+	line-height: 60px;
+	text-decoration:none;
+}
+nav a:hover { 
+	background-color: white; 
+    color: #242424;
+}
+nav ul ul {
+	display: none;
+	position: absolute;
+    right: 0rem;
+    bottom: -10.3rem
+}
+nav ul li:hover > ul {
+	display: block;
+}
+	
+nav ul ul li {
+	width:170px;
+	float:none;
+	display:list-item;
+	position: relative;
 }
