@@ -14,7 +14,7 @@ const Home = () => {
       ) : (
         <>
           <h1 className="titleHome">
-            Por favor registrese para poder acceder a la pagina
+            Por favor, regístrese para poder acceder a la página
           </h1>
           <button className="btn" onClick={() => navigate("/login")}>
             IR A LOGIN

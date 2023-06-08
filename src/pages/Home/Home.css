@@ -1,0 +1,27 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    color: white
+  }
+
+  .homeContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: #001d868e;
+    padding: 15px 25px 30px;
+    border-radius: 5px;
+    gap: 1rem
+  }
+ 
+  .btn{
+    background: #001d86B1;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+
+  .btn:hover {
+    background: #001d86;
+  }
