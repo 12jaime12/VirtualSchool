@@ -1,0 +1,12 @@
+header{
+    width: 100vw;
+    min-height: 10vh;
+    background-color: #001d86;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.logoVirtualSchool img{
+    width: 60px;
+    
+}

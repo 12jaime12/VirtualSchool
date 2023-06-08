@@ -4,9 +4,9 @@ import React from "react";
 
 const Footer = () => {
   return (
-    <div>
+    <footer>
       <h3>Virtual School ©2023</h3>
-    </div>
+    </footer>
   );
 };
 

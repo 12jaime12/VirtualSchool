@@ -1,8 +1,9 @@
 import { checkCode } from "../../service/API_proyect/user.service";
 import "./CheckCode.css";
 import { useForm } from "react-hook-form";
-import { useAuth } from "../contexts/authContext";
-import { useEffect, useState } from "react";
+import { useAuth } from "../../contexts/authContext";
+import React, { useEffect, useState } from "react";
+import useCheckCodeError from "../../hooks/useCheckCode";
 
 const CheckCode = () => {
   const { allUser, login, setUser } = useAuth();
@@ -17,19 +18,22 @@ const CheckCode = () => {
 
     if (userlocal == null) {
       const custFormData = {
-        confirmationCode: parseInt(formData.confirmationCode),
+        code: parseInt(formData.code),
       };
+      console.log(custFormData);
       const id = allUser.data.user._id;
       setSend(true);
+      console.log(id);
       setRes(await checkCode(custFormData, id));
       setSend(false);
     } else {
       const parse = JSON.parse(userlocal);
       const custFormData = {
-        confirmationCode: parseInt(formData.confirmationCode),
+        code: parseInt(formData.code),
       };
       const id = parse._id;
       setSend(true);
+      console.log(id);
       setRes(await checkCode(custFormData, id));
       setSend(false);
     }
@@ -72,7 +76,7 @@ const CheckCode = () => {
               id="name"
               name="name"
               autoComplete="false"
-              {...register("confirmationCode", { required: false })}
+              {...register("code", { required: false })}
             />
             <label htmlFor="custom-input" className="custom-placeholder">
               Código de registro

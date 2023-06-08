@@ -1,8 +1,8 @@
 import "./Register.css";
 import { useForm } from "react-hook-form";
-import { useEffect, useState } from "react";
+import React, { useEffect, useState } from "react";
 import UploadFile from "../../components/UploadFile/UploadFile";
-import useRegisterError from "../hooks/useRegisterError";
+import useRegisterError from "../../hooks/useRegisterError";
 import { registerUser } from "../../service/API_proyect/user.service";
 import { Link, Navigate } from "react-router-dom";
 import { useAuth } from "../../contexts/authContext";
@@ -21,11 +21,13 @@ const Register = () => {
     if (inputfile.length !== 0) {
       customFormData = { ...formData, image: inputfile[0] };
       setSend(true);
+      console.log(customFormData);
       setRes(await registerUser(customFormData));
       setSend(false);
     } else {
       customFormData = { ...formData };
       setSend(true);
+      console.log(customFormData);
       setRes(await registerUser(customFormData));
       setSend(false);
     }
