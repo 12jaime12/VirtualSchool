@@ -1,6 +1,6 @@
 import Swal from "sweetalert2";
 
-const useCheckCodeError = (res, setDeleteUser, setOkCheck) => {
+const useCheckCode = (res, setDeleteUser, setOkCheck) => {
   // -------404 o un 500  en este caso --------->res.response
   // -------200 ---> entramos directos a la ---->res.data
   //! -------status: 500
@@ -20,7 +20,7 @@ const useCheckCodeError = (res, setDeleteUser, setOkCheck) => {
     Swal.fire({
       icon: "error",
       title: "No correct Code ❎.",
-      text: "Tu usruario esta borrado, por favor registrese de nuevo",
+      text: "Tu usuario esta borrado, por favor registrese de nuevo",
       showConfirmButton: false,
       timer: 2500,
     });
@@ -69,4 +69,4 @@ const useCheckCodeError = (res, setDeleteUser, setOkCheck) => {
     });
 };
 
-export default useCheckCodeError;
+export default useCheckCode;

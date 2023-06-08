@@ -3,7 +3,7 @@ import "./CheckCode.css";
 import { useForm } from "react-hook-form";
 import { useAuth } from "../../contexts/authContext";
 import React, { useEffect, useState } from "react";
-import useCheckCodeError from "../../hooks/useCheckCode";
+import useCheckCode from "../../hooks/useCheckCode";
 
 const CheckCode = () => {
   const { allUser, login, setUser } = useAuth();
@@ -39,7 +39,7 @@ const CheckCode = () => {
     }
   };
   useEffect(() => {
-    useCheckCodeError(res, setDeleteUser, setOkCheck);
+    useCheckCode(res, setDeleteUser, setOkCheck);
   }, [res]);
 
   if (deleteUser) {
