@@ -41,6 +41,11 @@ a {
 .form-wrap h1,
 .form-wrap p {
   text-align: center;
+  color: white;
+}
+
+.form-wrap h1{
+  font-weight: 100;
 }
 
 .form-wrap .form-group {

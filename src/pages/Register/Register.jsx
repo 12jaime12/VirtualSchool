@@ -45,8 +45,8 @@ const Register = () => {
   return (
     <>
       <div className="form-wrap">
-        <h1>Acceder</h1>
-        <p>Regístrate para acceder a tu VirtualSchool.</p>
+        <h1>REGÍSTRATE</h1>
+        <p>Es necesario tener una cuenta para acceder a tu VirtualSchool.</p>
         <form onSubmit={handleSubmit(formSubmit)}>
           <div className="user_container form-group">
             <input
