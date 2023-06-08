@@ -1,18 +1,30 @@
 header{
     width: 100vw;
-    max-height: 10vh;
+    height: 10vh;
     background-color: #001d86;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
 }
 .logoVirtualSchool img{
     width: 60px;
     margin-left: 3rem;
 }
+.logoVirtualSchoolNo {
+	height: 10vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.logoVirtualSchoolNo img{
+    width: 60px;
+}
+.headerActive{
+	height: 10vh;
+	display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
 .iconoUsuario img{
     width: 100px;
-    border: 2px solid white;
+    border: 3px solid white;
     padding: 5px;
     border-radius: 50px;
     margin-right: 3rem;
@@ -20,12 +32,15 @@ header{
 	bottom: -3rem;
 	background-color: #001d86;
 }
+.perfil{
+	color: white;
+}
 header a{
     color: white;
 }
 nav {
 	margin: 50px 0;
-	background-color: #001d86;
+	background-color: transparent;
 }
 nav ul {
 	padding: 0;
@@ -35,10 +50,11 @@ nav ul {
 }
 nav ul li {
 	display:inline-block;
-	background-color: #001d86;
+	background-color: transparent;
 }
 nav ul li ul {
-    border: 3px solid white;
+    border: 3px solid #001d86;
+	background-color: #001d86;
 }
 nav a {
 	display:block;
@@ -48,7 +64,7 @@ nav a {
 	line-height: 60px;
 	text-decoration:none;
 }
-nav a:hover { 
+nav a:hover, nav p:hover { 
 	background-color: white; 
     color: #242424;
 }

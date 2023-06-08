@@ -5,7 +5,7 @@ import React from "react";
 const Footer = () => {
   return (
     <footer>
-      <h3>Virtual School <sup>©</sup> 2023</h3>
+      <h3>Virtual School ©2023</h3>
     </footer>
   );
 };

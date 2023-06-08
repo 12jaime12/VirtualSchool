@@ -1,8 +1,10 @@
 import React, { createContext, useContext, useMemo, useState } from "react";
+import { useNavigate } from "react-router-dom";
 
 const AuthContext = createContext();
 
 export const AuthContextProvider = ({ children }) => {
+  const navigate = useNavigate();
   //--------------------Login---------------------------
   const [user, setUser] = useState(() => {
     const data = localStorage.getItem("user");
@@ -43,6 +45,12 @@ export const AuthContextProvider = ({ children }) => {
     setUser(() => parseData);
   };
 
+  const logout = () => {
+    localStorage.removeItem("user");
+    setUser(null);
+    navigate("/login");
+  };
+
   const value = useMemo(
     () => ({
       user,
@@ -51,6 +59,7 @@ export const AuthContextProvider = ({ children }) => {
       allUser,
       setAllUser,
       bridgeData,
+      logout,
     }),
     [user, allUser]
   );

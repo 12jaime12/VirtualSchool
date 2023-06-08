@@ -5,7 +5,9 @@ import React from "react";
 const Profile = () => {
   return (
     <>
-      <div></div>
+      <div>
+        <p>hola</p>
+      </div>
     </>
   );
 };
