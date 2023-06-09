@@ -2,11 +2,6 @@ import "./Dashboard.css";
 
 import React, { useEffect, useState } from "react";
 
-import Horario1 from "../../components/HorarioEscolar/Horario1/Horario1";
-import Horario2 from "../../components/HorarioEscolar/Horario2/Horario2";
-import Horario3 from "../../components/HorarioEscolar/Horario3/Horario3";
-import Horario4 from "../../components/HorarioEscolar/Horario4/Horario4";
-
 import { getCursoActual } from "../../service/API_proyect/user.service";
 import { SwitchHorarios } from "../../components/Switchs";
 
