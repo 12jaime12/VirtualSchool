@@ -12,6 +12,7 @@ import { Protected } from "./components/Protected/Protected.jsx";
 import Profile from "./pages/Profile/Profile.jsx";
 import Dashboard from "./pages/Dashboard/Dashboard.jsx";
 import ForgotPassword from "./pages/ForgotPassword/ForgotPassword.jsx";
+import NotasActual from "./pages/NotasActual/NotasActual.jsx";
 
 ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
@@ -32,7 +33,9 @@ ReactDOM.createRoot(document.getElementById("root")).render(
               }
             />
             <Route path="/forgotpassword" element={<ForgotPassword />} />
-            <Route path="/dashboard" element={<Dashboard />} />
+            <Route path="/dashboard" element={<Dashboard />}>
+              <Route path="/dashboard/notasActual" element={<NotasActual />} />
+            </Route>
           </Route>
         </Routes>
       </AuthContextProvider>

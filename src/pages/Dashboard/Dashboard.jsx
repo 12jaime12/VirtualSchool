@@ -3,10 +3,13 @@ import "./Dashboard.css";
 import React, { useEffect, useState } from "react";
 
 import { getCursoActual } from "../../service/API_proyect/user.service";
-import { SwitchHorarios } from "../../components/Switchs";
+import { SwitchHorarios, SwitchRol } from "../../components/Switchs";
+import { useAuth } from "../../contexts/authContext";
 
 const Dashboard = () => {
   const [curso, setCurso] = useState({});
+  const [anno, setAnno] = useState();
+  const { user } = useAuth();
 
   useEffect(() => {
     (async () => {
@@ -15,28 +18,15 @@ const Dashboard = () => {
   }, []);
 
   useEffect(() => {
-    console.log(curso);
-  }, [curso]);
+    const date = new Date();
+    setAnno(date.getFullYear());
+  }, []);
 
   return (
     <>
       <div className="dashboard">
         <div className="optionsD">
-          {/* {(() => {
-            switch (curso) {
-              case "alumn":
-                return <Horario1 />;
-                break;
-              case "teacher":
-                return <Horario2 />;
-                break;
-              case "admin":
-                return <Horario3 />;
-                break;
-              default:
-                return <Horario1 />;
-            }
-          })()} */}
+          <SwitchRol rol={user.rol} curso={anno} />
         </div>
         <div className="contentD">
           <SwitchHorarios curso={curso.data} />
