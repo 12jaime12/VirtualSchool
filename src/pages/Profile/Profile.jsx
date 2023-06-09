@@ -7,7 +7,14 @@ const Profile = () => {
     <>
       <div className="profile">
         <div className="options">
-          <p>hola</p>
+          <ul>
+            <li>
+              <a>Cambiar Contraseña</a>
+            </li>
+            <li>
+              <a>Actualizar perfil</a>
+            </li>
+          </ul>
         </div>
         <div className="content">
           <p>profile</p>
