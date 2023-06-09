@@ -7,15 +7,16 @@
     height: 80vh;
     display: flex;
     justify-content: center;
-    padding: 3rem;
     border-radius: 10px;
 }
 .optionsD p{
+    font-weight: 300;
     color: white;
 }
 .contentD{
-    width: 80vw;
+    width: 70vw;
     height: 80vh;
+    
 }
 
 div.optionsD{

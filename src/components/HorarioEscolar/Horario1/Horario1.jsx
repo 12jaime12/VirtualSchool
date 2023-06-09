@@ -3,8 +3,9 @@ import React from 'react'
 
 const Horario1 = () => {
     return (
+    <div className="tabla">
 	<table className="cal">
-		<caption>curso 2018-2019</caption> 
+		<caption>1 ESO</caption> 
 		<thead>
 			<tr>
 				<th></th>
@@ -15,7 +16,7 @@ const Horario1 = () => {
 				<th>Vie</th>
 			</tr>
 		</thead>
-
+        
 		<tbody>
 			<tr>
 				<td className="horas">8:30 a 9:25 </td>
@@ -77,8 +78,8 @@ const Horario1 = () => {
 
 			</tr>
         </tbody>
-
     </table>
+    </div>
             
   )
 }
