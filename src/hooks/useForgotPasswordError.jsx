@@ -6,7 +6,7 @@ const useForgotPasswordError = (res, setForgetOk) => {
       setForgetOk(() => true);
       return Swal.fire({
         icon: "succes",
-        title: "Change password ok",
+        title: "Cambio de contraseña correcto",
         text: "Email enviado con tu nueva contraseña ✅",
         showConfirmButton: false,
         timer: 3000,
@@ -15,7 +15,7 @@ const useForgotPasswordError = (res, setForgetOk) => {
     if (res?.data?.sendPassword == true && res?.data?.updateUser == false) {
       return Swal.fire({
         icon: "error",
-        title: "Error send incorrect email",
+        title: "Error al enviar correo",
         text: "No se cambio tu contraseña, tu email no es valido ❎",
         showConfirmButton: false,
         timer: 1500,
