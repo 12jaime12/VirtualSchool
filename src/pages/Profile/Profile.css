@@ -16,26 +16,25 @@
     color: white;
     cursor: pointer;
     font-weight: 800;
-}
-
-p:hover{
-    color: black;
-}
-.options li:hover{
-    border-radius: 10px;
-    color: black;
-    background-color: white;
-
-}
-
-.options li{
-    list-style: none;
-    margin: 3rem;
     width: 18vw;
     height: 6vh;
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+.options p:hover{
+    border-radius: 10px;
+    color: black;
+    background-color: white;
+}
+
+.options li{
+    margin: 3rem;
+    width: 18vw;
+    height: 6vh;
+    list-style: none;
+
 }
 
 .content{
