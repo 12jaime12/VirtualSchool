@@ -2,21 +2,36 @@
     display: flex;
 } 
 .optionsD{
-    background-color: #001d86B1;
+    background-color: #296ab1;
     width: 20vw;
     height: 80vh;
     display: flex;
     justify-content: center;
     border-radius: 10px;
 }
-.optionsD p{
-    font-weight: 300;
-    color: white;
+
+.optionsD h3:hover{
+    box-shadow: 10px 5px 5px black;
+}
+
+.optionsD h3{
+    width: 18vw;
+    height: 6vh;
+    background-color: aliceblue;
+    text-align: center;
+    color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    margin-top: 2rem;
 }
 .contentD{
-    width: 70vw;
+    width: 80vw;
     height: 80vh;
-    
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 div.optionsD{

@@ -1,10 +1,14 @@
 footer{
     width: 100vw;
     min-height: 10vh;
-    background-color: #001d86;
+    background-color:#1a5089;
     display: flex;
     justify-content: center;
     align-items: center;
     color: #fff;
     border-top: 3px solid white;
+}
+
+h3{
+    font-weight: bolder;
 }
