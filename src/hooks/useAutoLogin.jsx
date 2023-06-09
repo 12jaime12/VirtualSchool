@@ -14,7 +14,7 @@ const useAutoLogin = async (allUser, userlogin) => {
     if (setData.status == 200) {
       const dataCustom = {
         token: setData.data.token,
-        id: res.data._id,
+        id: setData.data._id,
         user: setData.data.user.name,
         email: setData.data.user.email,
         image: setData.data.user.image,
