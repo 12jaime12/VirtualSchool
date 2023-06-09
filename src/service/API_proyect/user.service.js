@@ -1,3 +1,4 @@
+import { updateToken } from "../../util/updateToken";
 import { API } from "./service.config";
 //----------------------------------------------register-----------------------------
 export const registerUser = async (formData) => {
@@ -37,6 +38,18 @@ export const autoLoginUser = async (formData) => {
 //---------------------------forgot-password-----------------
 export const forgotPasswordUser = async (formData) => {
   return API.patch("/user/forgotpassword", formData)
+    .then((res) => res)
+    .catch((error) => {
+      return error;
+    });
+};
+//-------------------get curso----------------
+export const getCursoActual = async () => {
+  return API.get("/user/getCurso", {
+    headers: {
+      Authorization: `Bearer ${updateToken()}`,
+    },
+  })
     .then((res) => res)
     .catch((error) => {
       return error;

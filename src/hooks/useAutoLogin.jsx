@@ -19,7 +19,8 @@ const useAutoLogin = async (allUser, userlogin) => {
         email: setData.data.user.email,
         image: setData.data.user.image,
         check: setData.data.user.check,
-        hola: "auto",
+        curso: setData.data.user.curso,
+        rol: setData.data.user.rol,
       };
 
       const dataSting = JSON.stringify(dataCustom);
