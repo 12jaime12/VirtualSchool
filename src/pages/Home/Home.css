@@ -25,3 +25,8 @@
   .btn:hover {
     background: #001d86;
   }
+
+  h1.titleHome{
+    font-weight: 100;
+  }
+

@@ -2,6 +2,8 @@ import "./Dashboard.css";
 
 import React from "react";
 
+import Horario1 from "../../components/HorarioEscolar/Horario1/Horario1";
+
 const Dashboard = () => {
   return (
     <>
@@ -10,7 +12,7 @@ const Dashboard = () => {
           <p>hola</p>
         </div>
         <div className="contentD">
-          <p>dashboard</p>
+          <Horario1/>
         </div>
       </div>
     </>

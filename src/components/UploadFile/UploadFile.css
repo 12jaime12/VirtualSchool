@@ -23,6 +23,7 @@
 #start > i.fa {
   transform: scale(0.8);
   opacity: 0.3;
+  color: #001d86;
 }
 
 #start {
@@ -132,4 +133,5 @@ strong {
 
 .divSelect {
   margin: 20px;
+  color: #001d86;
 }
