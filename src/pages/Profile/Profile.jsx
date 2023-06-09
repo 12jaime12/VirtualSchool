@@ -9,10 +9,10 @@ const Profile = () => {
         <div className="options">
           <ul>
             <li>
-              <a>Cambiar Contraseña</a>
+              <p>Cambiar Contraseña</p>
             </li>
             <li>
-              <a>Actualizar perfil</a>
+              <p>Actualizar perfil</p>
             </li>
           </ul>
         </div>
