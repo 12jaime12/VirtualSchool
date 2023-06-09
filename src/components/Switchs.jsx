@@ -30,15 +30,15 @@ export const SwitchRol = ({ rol, curso }) => {
         <>
           <ul>
             <li>
-              <Link to="/dashboard/notasActual">
+              <Link to="/dashboard/notasActual" className="link">
                 <p>ver notas curso {curso}</p>
               </Link>
             </li>
             <li>
-              <a>Ver notas por curso</a>
+              <p>Ver notas por curso</p>
             </li>
             <li>
-              <a>Ver nota por asignatura</a>
+              <p>Ver nota por asignatura</p>
             </li>
           </ul>
         </>

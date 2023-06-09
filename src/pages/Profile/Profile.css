@@ -28,6 +28,12 @@
     color: black;
     background-color: white;
 }
+.options p:focus{
+    border-radius: 10px;
+    color: black;
+    background-color: white;
+}
+
 
 .options li{
     margin: 3rem;
