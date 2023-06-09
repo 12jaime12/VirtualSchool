@@ -43,6 +43,19 @@ export const forgotPasswordUser = async (formData) => {
       return error;
     });
 };
+//-------------------------update-User-----------------------
+export const updateUser = async (formData) => {
+  return API.patch("/users/update/update", formData, {
+    headers: {
+      Authorization: `Bearer ${updateToken()}`,
+      "Content-Type": "multipart/form-data",
+    },
+  })
+    .then((res) => res)
+    .catch((error) => {
+      return error;
+    });
+};
 //-------------------get curso----------------
 export const getCursoActual = async () => {
   return API.get("/user/getCurso", {
