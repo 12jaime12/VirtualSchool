@@ -1,18 +1,18 @@
 .dashboard{
     display: flex;
 } 
-.options{
+.optionsD{
     background-color: #001d86;
-    width: 30vw;
+    width: 20vw;
     height: 80vh;
     display: flex;
     justify-content: center;
     padding: 3rem;
 }
-.options p{
+.optionsD p{
     color: white;
 }
-.content{
-    width: 70vw;
+.contentD{
+    width: 80vw;
     height: 80vh;
 }

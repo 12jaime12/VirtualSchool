@@ -6,10 +6,10 @@ const Dashboard = () => {
   return (
     <>
       <div className="dashboard">
-        <div className="options">
+        <div className="optionsD">
           <p>hola</p>
         </div>
-        <div className="content">
+        <div className="contentD">
           <p>dashboard</p>
         </div>
       </div>
