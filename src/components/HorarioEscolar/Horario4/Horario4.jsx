@@ -1,4 +1,3 @@
-import "./Horario4.css";
 import React from "react";
 
 const Horario4 = () => {

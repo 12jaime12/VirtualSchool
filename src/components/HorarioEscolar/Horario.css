@@ -1,10 +1,6 @@
-table.cal{
+.cal{
     width: 70vw;
     min-height: 60vh;
-}
-tabla{
-    width: 100%;
-    height: 80vh;
 }
 table > caption{
 	border-radius: 15px;
@@ -128,6 +124,3 @@ td{
     color: black;
     font-weight: bolder;
 }
-
-
-
