@@ -13,7 +13,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background: #001d868e;
+    background: #1a50898e;
     padding: 15px 25px 30px;
     border-radius: 5px;
     gap: 1rem
@@ -22,17 +22,24 @@
   .form-container h1,
 .form-container p {
   text-align: center;
-  color: white;
+  color: #001d86;
+  font-weight: bolder;
 }
 
-.form-container h1{
-    font-weight: 100;
+small{
+  color:#001d86;
+  font-weight: normal;
+}
+
+.anchorCustom, a{
+  font-weight: bolder;
 }
 
   .form-container .form-group label {
-    color: white;
+    color: #001d86;
     font-weight: normal;
   }
+
   
   .form-container .form-group input {
     width: 100%;
