@@ -5,7 +5,7 @@ const useForgotPasswordError = (res, setForgetOk) => {
     if (res?.data?.sendPassword == true && res?.data?.updateUser == true) {
       setForgetOk(() => true);
       return Swal.fire({
-        icon: "succes",
+        icon: "success",
         title: "Cambio de contraseña correcto",
         text: "Email enviado con tu nueva contraseña ✅",
         showConfirmButton: false,

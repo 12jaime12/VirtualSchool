@@ -8,16 +8,26 @@
     height: 80vh;
     display: flex;
     justify-content: center;
-    padding: 3rem;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
 }
 .options a{
     color: white;
     text-decoration:none;
     cursor: pointer;
+    padding: 1rem 0;
+}
+.options a:hover{
+    color: black;
+    background-color: white;
+}
+.options a:focus{
+    color: black;
+    background-color: white;
 }
 .options li{
     list-style: none;
-    margin: 2rem;
+    margin: 2rem 0.5rem;
 }
 
 .content{

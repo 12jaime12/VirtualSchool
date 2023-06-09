@@ -34,3 +34,11 @@ export const autoLoginUser = async (formData) => {
       return error;
     });
 };
+//---------------------------forgot-password-----------------
+export const forgotPasswordUser = async (formData) => {
+  return API.patch("/user/forgotpassword", formData)
+    .then((res) => res)
+    .catch((error) => {
+      return error;
+    });
+};
