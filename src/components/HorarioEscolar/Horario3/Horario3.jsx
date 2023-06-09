@@ -1,4 +1,4 @@
-import "./Horario1.css";
+import "./Horario3.css";
 import React from "react";
 
 const Horario3 = () => {
