@@ -22,6 +22,8 @@ body {
 
 a {
   text-decoration: none;
+  color: #001d86;
+  font-weight: bolder;
 }
 
 #container {
@@ -32,7 +34,7 @@ a {
 
 .form-wrap {
   margin-top: 2rem;
-  background: #001d868e;
+  background: #1a50898e;
   padding: 15px 25px 30px;
   color: white;
   border-radius: 5px;
@@ -41,11 +43,8 @@ a {
 .form-wrap h1,
 .form-wrap p {
   text-align: center;
-  color: white;
-}
-
-.form-wrap h1{
-  font-weight: 100;
+  color: #001d86;
+  font-weight: bolder;
 }
 
 .form-wrap .form-group {
@@ -53,7 +52,7 @@ a {
 }
 
 .form-wrap .form-group label {
-  color: white;
+  color: #001d86;
   font-weight: normal;
 }
 
@@ -63,7 +62,6 @@ a {
   border: #ddd 1px solid;
   border-radius: 5px;
   font-family: inherit;
-  font-size: inherit;
   caret-color: #001d86;
 }
 
@@ -80,7 +78,6 @@ a {
   cursor: pointer;
   border-radius: 5px;
   font-family: inherit;
-  font-size: inherit;
 }
 
 .form-wrap .btn:hover {
@@ -135,10 +132,12 @@ input[type="radio"] {
 .sexo .masculino {
   border-radius: 3px 0 0 3px;
   color: white !important;
+
 }
 .sexo .femenino {
   border-radius: 0 3px 3px 0;
   color: white !important;
+ 
 }
 
 .label-radio {
@@ -154,9 +153,7 @@ input[type="radio"]:checked + .label-radio {
   color: #fff !important;
 }
 
-a {
-  color: #001d86;
-}
+
 
 a:hover{
   color: #001d86;
