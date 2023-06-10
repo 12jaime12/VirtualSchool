@@ -1,9 +1,9 @@
-.notasactual{
+.notasporcurso{
     display: flex;
     justify-content: center;
     align-items: center;
     
 }
-.notasactual h1{
+.notasporcurso h1{
     color: black;
 }

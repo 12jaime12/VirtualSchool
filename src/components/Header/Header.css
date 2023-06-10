@@ -31,7 +31,7 @@ header{
     margin-right: 3rem;
 	position: relative;
 	bottom: -3rem;
-	background-color: #001d86;
+	background-color: #1a5089;
 }
 .perfil{
 	color: white;
@@ -54,8 +54,8 @@ nav ul li {
 	background-color: transparent;
 }
 nav ul li ul {
-    border: 3px solid #001d86;
-	background-color: #001d86;
+    border: 3px solid #1a5089;
+	background-color: #1a5089;
 }
 nav a {
 	display:block;

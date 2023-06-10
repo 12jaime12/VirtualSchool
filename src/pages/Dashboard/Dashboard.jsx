@@ -23,7 +23,6 @@ const Dashboard = () => {
           <SwitchRol rol={user.rol} curso={anno} />
         </div>
         <div className="contentD">
-          {/* <SwitchHorarios curso={curso.data} /> */}
           <Outlet />
         </div>
       </div>

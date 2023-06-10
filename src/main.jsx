@@ -14,6 +14,7 @@ import Dashboard from "./pages/Dashboard/Dashboard.jsx";
 import ForgotPassword from "./pages/ForgotPassword/ForgotPassword.jsx";
 import { Horario } from "./components/Horario/Horario.jsx";
 import NotasActual from "./components/NotasActual/NotasActual.jsx";
+import NotasPorCurso from "./components/NotasPorCurso/NotasPorCurso.jsx";
 
 ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
@@ -37,6 +38,10 @@ ReactDOM.createRoot(document.getElementById("root")).render(
             <Route path="/dashboard" element={<Dashboard />}>
               <Route index element={<Horario />} />
               <Route path="/dashboard/notasActual" element={<NotasActual />} />
+              <Route
+                path="/dashboard/notasporcurso"
+                element={<NotasPorCurso />}
+              />
             </Route>
           </Route>
         </Routes>

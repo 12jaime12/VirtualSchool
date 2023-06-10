@@ -31,14 +31,16 @@ export const SwitchRol = ({ rol, curso }) => {
           <ul>
             <li>
               <Link to="/dashboard/notasActual" className="link">
-                <p>Ver notas curso {curso}</p>
+                <p>Notas curso {curso}</p>
               </Link>
             </li>
             <li>
-              <p>Ver notas por curso</p>
+              <Link to="/dashboard/notasporcurso" className="link">
+                <p>Notas por curso</p>
+              </Link>
             </li>
             <li>
-              <p>Ver nota por asignatura</p>
+              <p>Nota por asignatura</p>
             </li>
           </ul>
         </>
@@ -49,13 +51,13 @@ export const SwitchRol = ({ rol, curso }) => {
         <>
           <ul>
             <li>
-              <p>ver alumnos asignatura</p>
+              <p>Alumnos asignatura</p>
             </li>
             <li>
-              <p>crear nota</p>
+              <p>Crear nota</p>
             </li>
             <li>
-              <p>borrar nota</p>
+              <p>Borrar nota</p>
             </li>
           </ul>
         </>
@@ -66,13 +68,13 @@ export const SwitchRol = ({ rol, curso }) => {
         <>
           <ul>
             <li>
-              <p>crear asignatura</p>
+              <p>Crear asignatura</p>
             </li>
             <li>
               <p>Añadir alumno-profesor a la asignatura</p>
             </li>
             <li>
-              <p>Ver Profesorado</p>
+              <p>Profesorado</p>
             </li>
           </ul>
         </>
