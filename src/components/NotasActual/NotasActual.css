@@ -2,8 +2,14 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    
+    flex-direction: column;
 }
 .notasactual h1{
     color: black;
+}
+.asignatura,.curso,.nota{
+    width: 6rem;
+}
+.table{
+    border: 2px solid black;
 }

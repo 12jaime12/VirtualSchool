@@ -1,5 +1,5 @@
 import React from "react";
-import "./AñadirAlumnoProfesor";
+import "./AñadirAlumnoProfesor.css";
 const AñadirAlumnoProfesor = () => {
   return (
     <>

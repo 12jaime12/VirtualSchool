@@ -68,3 +68,16 @@ export const getCursoActual = async () => {
       return error;
     });
 };
+//----------------get-all-porfesores--------
+
+export const getAllProfesores = async () => {
+  return API.get("/user/getAllTeacher", {
+    headers: {
+      Authorization: `Bearer ${updateToken()}`,
+    },
+  })
+    .then((res) => res)
+    .catch((error) => {
+      return error;
+    });
+};
