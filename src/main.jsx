@@ -15,6 +15,13 @@ import ForgotPassword from "./pages/ForgotPassword/ForgotPassword.jsx";
 import { Horario } from "./components/Horario/Horario.jsx";
 import NotasActual from "./components/NotasActual/NotasActual.jsx";
 import NotasPorCurso from "./components/NotasPorCurso/NotasPorCurso.jsx";
+import NotaPorAsignatura from "./components/NotaPorAsignatura/NotaPorAsignatura.jsx";
+import AlumnosAsignatura from "./components/AlumnosAsignatura/AlumnosAsignatura.jsx";
+import CrearNota from "./components/CrearNota/CrearNota.jsx";
+import BorrarNota from "./components/BorrarNota/BorrarNota.jsx";
+import CrearAsignatura from "./components/CrearAsignatura/CrearAsignatura.jsx";
+import AñadirAlumnoProfesor from "./components/AñadirAlumnoProfesor/AñadirAlumnoProfesor.jsx";
+import Profesorado from "./components/Profesorado/Profesorado.jsx";
 
 ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
@@ -42,6 +49,25 @@ ReactDOM.createRoot(document.getElementById("root")).render(
                 path="/dashboard/notasporcurso"
                 element={<NotasPorCurso />}
               />
+              <Route
+                path="/dashboard/notaporasignatura"
+                element={<NotaPorAsignatura />}
+              />
+              <Route
+                path="/dashboard/alumnosasignatura"
+                element={<AlumnosAsignatura />}
+              />
+              <Route path="/dashboard/crearnota" element={<CrearNota />} />
+              <Route path="/dashboard/borrarnota" element={<BorrarNota />} />
+              <Route
+                path="/dashboard/crearasignatura"
+                element={<CrearAsignatura />}
+              />
+              <Route
+                path="/dashboard/añadiralumnoprofesor"
+                element={<AñadirAlumnoProfesor />}
+              />
+              <Route path="/dashboard/profesorado" element={<Profesorado />} />
             </Route>
           </Route>
         </Routes>

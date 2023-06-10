@@ -5,7 +5,6 @@ const NotasPorCurso = () => {
     <>
       <div className="notasporcurso">
         <h1>Notas por curso</h1>
-
         <div></div>
       </div>
     </>
