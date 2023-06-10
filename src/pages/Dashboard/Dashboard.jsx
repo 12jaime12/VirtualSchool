@@ -2,24 +2,18 @@ import "./Dashboard.css";
 
 import React, { useEffect, useState } from "react";
 
-import { getCursoActual } from "../../service/API_proyect/user.service";
 import { SwitchHorarios, SwitchRol } from "../../components/Switchs";
 import { useAuth } from "../../contexts/authContext";
+import { Outlet } from "react-router-dom";
 
 const Dashboard = () => {
-  const [curso, setCurso] = useState({});
   const [anno, setAnno] = useState();
   const { user } = useAuth();
 
   useEffect(() => {
-    (async () => {
-      setCurso(await getCursoActual());
-    })();
-  }, []);
-
-  useEffect(() => {
     const date = new Date();
     setAnno(date.getFullYear());
+    console.log(user.rol);
   }, []);
 
   return (
@@ -29,7 +23,8 @@ const Dashboard = () => {
           <SwitchRol rol={user.rol} curso={anno} />
         </div>
         <div className="contentD">
-          <SwitchHorarios curso={curso.data} />
+          {/* <SwitchHorarios curso={curso.data} /> */}
+          <Outlet />
         </div>
       </div>
     </>
