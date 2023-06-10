@@ -1,0 +1,8 @@
+.notaporasignatura {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.notaporasignatura h1 {
+  color: black;
+}

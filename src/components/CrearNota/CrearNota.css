@@ -1,0 +1,8 @@
+.crearnota {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.crearnota h1 {
+  color: black;
+}

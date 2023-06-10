@@ -1,0 +1,8 @@
+.borrarnota {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.borrarnota h1 {
+  color: black;
+}

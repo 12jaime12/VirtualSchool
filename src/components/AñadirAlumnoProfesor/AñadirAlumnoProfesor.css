@@ -1,0 +1,8 @@
+.añadiralumnoprofesor {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.añadiralumnoprofesor h1 {
+  color: black;
+}

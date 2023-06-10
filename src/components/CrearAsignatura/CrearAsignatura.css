@@ -1,0 +1,8 @@
+.crearasignatura {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.crearasignatura h1 {
+  color: black;
+}

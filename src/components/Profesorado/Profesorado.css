@@ -1,0 +1,8 @@
+.profesorado {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.profesorado h1 {
+  color: black;
+}
