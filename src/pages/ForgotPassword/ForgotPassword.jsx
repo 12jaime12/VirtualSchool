@@ -27,8 +27,8 @@ const ForgotPassword = () => {
   return (
     <>
       <div className="form-wrap">
-        <h1>Change your password 💱</h1>
-
+        <h1>Cambio de contraseña</h1>
+  
         <form onSubmit={handleSubmit(formSubmit)}>
           <div className="user_container form-group">
             <input
@@ -51,12 +51,12 @@ const ForgotPassword = () => {
               disabled={send}
               style={{ background: send ? "#001d86" : "#001d86b1" }}
             >
-              Change password
+              Cambiar contraseña
             </button>
           </div>
 
           <p className="bottom-text">
-            <small>Enter your email to send you the new password 💌</small>
+            <small>Escribe el email donde quieres recibir el cambio de contraseña.</small>
           </p>
         </form>
       </div>

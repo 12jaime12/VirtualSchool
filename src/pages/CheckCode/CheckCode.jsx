@@ -69,8 +69,8 @@ const CheckCode = () => {
   return (
     <>
       <div className="form-wrap">
-        <h1>Verifica tu código de registro</h1>
-        <p>Escribe el código enviado a tu correo electrónico</p>
+        <h1>Verificación de código</h1>
+        <p>Escribe el código que has recibido a tu correo electrónico</p>
         <form onSubmit={handleSubmit(formSubmit)}>
           <div className="user_container form-group">
             <input
@@ -111,7 +111,7 @@ const CheckCode = () => {
 
           <p className="bottom-text">
             <small>
-              Si el código introducido no es correcto ❌, su usuario será
+              Si el código introducido no es correcto, su usuario será
               eliminado de la base de datos y tendrá que registrarse de nuevo.{" "}
             </small>
           </p>
