@@ -2,7 +2,11 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-direction: column;
 }
 .profesorado h1 {
   color: black;
+}
+.nombre,.asignatura,.curso{
+  width: 10rem;
 }

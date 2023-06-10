@@ -12,3 +12,15 @@ export const getNotasAñoActual = async () => {
       return error;
     });
 };
+//------------------get-notas-curso-actual-------
+export const getNotasCurso = async (curso) => {
+  return API.get(`/asignaturas/curso/${curso}`, {
+    headers: {
+      Authorization: `Bearer ${updateToken()}`,
+    },
+  })
+    .then((res) => res)
+    .catch((error) => {
+      return error;
+    });
+};

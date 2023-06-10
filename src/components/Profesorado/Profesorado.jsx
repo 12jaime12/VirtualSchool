@@ -10,14 +10,31 @@ const Profesorado = () => {
     })();
   }, []);
 
-  useEffect(() => {
-    console.log(profesores.data[0]);
-  }, [profesores]);
   return (
     <>
       <div className="profesorado">
         <h1>Profesorado</h1>
-        <div></div>
+        <div>
+          <table>
+            {profesores.data.map((element) => (
+              <tbody key={element._id}>
+                <tr>
+                  <td>
+                    <p className="nombre">{element.name}</p>
+                  </td>
+                  <td>
+                    <p className="asignatura">
+                      {element?.asignaturas[0]?.name}
+                    </p>
+                  </td>
+                  <td>
+                    <p className="curso">{element?.asignaturas[0]?.curso}</p>
+                  </td>
+                </tr>
+              </tbody>
+            ))}
+          </table>
+        </div>
       </div>
     </>
   );

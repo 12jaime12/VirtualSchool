@@ -13,14 +13,13 @@ const Dashboard = () => {
   useEffect(() => {
     const date = new Date();
     setAnno(date.getFullYear());
-    console.log(user.rol);
   }, []);
 
   return (
     <>
       <div className="dashboard">
         <div className="optionsD">
-          <SwitchRol rol={user.rol} curso={anno} />
+          <SwitchRol rol={user?.rol} curso={anno} />
         </div>
         <div className="contentD">
           <Outlet />

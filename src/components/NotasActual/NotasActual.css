@@ -8,7 +8,7 @@
     color: black;
 }
 .asignatura,.curso,.nota{
-    width: 6rem;
+    width: 10rem;
 }
 .table{
     border: 2px solid black;
