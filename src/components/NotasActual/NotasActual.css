@@ -4,12 +4,44 @@
     align-items: center;
     flex-direction: column;
 }
+
 .notasactual h1{
-    color: black;
+    border: 5px solid #296ab1;
+	color: #296ab1;
+    border-radius: 15px;
+	text-align: center;
+	font-size: 40px;
+    font-weight: bold;
+	margin:2% 2% 2% 2%;
+    width: 80vh;
+    text-transform: uppercase;
 }
-.asignatura,.curso,.nota{
+
+tbody> tr > td{
     width: 10rem;
 }
-.table{
-    border: 2px solid black;
+
+tbody> tr > td.asignatura{
+    background-color: #1a5089;
 }
+
+tbody> tr > td.curso{
+    background-color: #296ab1;
+}
+
+tbody> tr > td.nota{
+    border: 3px solid #296ab1;
+}
+
+.asignatura, .curso, p{
+    color: white;
+}
+
+.nota p{
+    color: #296ab1;
+}
+
+
+/* table{
+    border: 2px solid black;
+} */

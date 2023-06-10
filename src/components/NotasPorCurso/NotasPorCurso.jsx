@@ -18,7 +18,7 @@ const NotasPorCurso = () => {
     <>
       <div className="notasporcurso">
         <h1>Notas por curso</h1>
-        <select
+        <select 
           onChange={(e) => {
             setCurso(e.target.value);
           }}

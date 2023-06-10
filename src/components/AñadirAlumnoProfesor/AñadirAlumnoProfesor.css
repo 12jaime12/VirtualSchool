@@ -4,5 +4,13 @@
   align-items: center;
 }
 .añadiralumnoprofesor h1 {
-  color: black;
+  border: 5px solid #296ab1;
+	color: #296ab1;
+  border-radius: 15px;
+	text-align: center;
+	font-size: 40px;
+  font-weight: bold;
+	margin:2% 2% 2% 2%;
+  text-transform: uppercase;
+  width: 55vw;
 }

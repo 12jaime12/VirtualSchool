@@ -19,16 +19,16 @@ const Profesorado = () => {
             {profesores.data.map((element) => (
               <tbody key={element._id}>
                 <tr>
-                  <td>
-                    <p className="nombre">{element.name}</p>
+                  <td className="nombre1">
+                    <p>{element.name}</p>
                   </td>
-                  <td>
-                    <p className="asignatura">
+                  <td className="asignatura1">
+                    <p>
                       {element?.asignaturas[0]?.name}
                     </p>
                   </td>
-                  <td>
-                    <p className="curso">{element?.asignaturas[0]?.curso}</p>
+                  <td className="curso1">
+                    <p>{element?.asignaturas[0]?.curso}</p>
                   </td>
                 </tr>
               </tbody>

@@ -81,7 +81,7 @@ a {
 }
 
 .form-wrap .btn:hover {
-  background: #001d86;
+  background-color: #001d86;
   color: #f4f4f4;
 }
 
@@ -176,9 +176,9 @@ a:hover{
   
 }
 .btn:hover {
-  border-color: #646cff;
+  background-color: #001d86;
 }
 .btn:focus,
 .btn:focus-visible {
   outline: 4px auto -webkit-focus-ring-color;
-}
+}  

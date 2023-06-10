@@ -29,14 +29,14 @@ const NotasActual = () => {
             {notas.data.map((element) => (
               <tbody key={element._id}>
                 <tr>
-                  <td>
-                    <p className="asignatura">{element.asignatura.name}</p>
+                  <td className="asignatura">
+                    <p>{element.asignatura.name}</p>
                   </td>
-                  <td>
-                    <p className="curso">{element.asignatura.curso}</p>
+                  <td className="curso">
+                    <p>{element.asignatura.curso}</p>
                   </td>
-                  <td>
-                    <p className="nota">{element.nota}</p>
+                  <td className="nota">
+                    <p>{element.nota}</p>
                   </td>
                 </tr>
               </tbody>
