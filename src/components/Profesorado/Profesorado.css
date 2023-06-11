@@ -5,8 +5,37 @@
   flex-direction: column;
 }
 .profesorado h1 {
-  color: black;
+  border: 5px solid #296ab1;
+	color: #296ab1;
+  border-radius: 15px;
+	text-align: center;
+	font-size: 40px;
+  font-weight: bold;
+	margin:2% 2% 2% 2%;
+  width: 80vh;
+  text-transform: uppercase;
 }
-.nombre,.asignatura,.curso{
+
+tbody> tr > td{
   width: 10rem;
+}
+
+tbody> tr > td.nombre1{
+  background-color: #1a5089;
+}
+
+tbody> tr > td.asignatura1{
+  background-color: #296ab1;
+}
+
+tbody> tr > td.curso1{
+  border: 3px solid #296ab1;
+}
+
+.nombre1, .asignatura1, p{
+  color: white;
+}
+
+.curso1 p{
+  color: #296ab1;
 }

@@ -2,7 +2,6 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    color: white
   }
 
   .homeContainer {
@@ -10,7 +9,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background: #001d868e;
+    background: #1a50898e;
     padding: 15px 25px 30px;
     border-radius: 5px;
     gap: 1rem
@@ -20,13 +19,15 @@
     background: #001d86B1;
     cursor: pointer;
     border-radius: 5px;
+    color: white
   }
-
+  
   .btn:hover {
     background: #001d86;
   }
 
   h1.titleHome{
     font-weight: 100;
+    color: #001d86;
   }
 

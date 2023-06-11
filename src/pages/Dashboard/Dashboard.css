@@ -30,20 +30,14 @@
     color: black;
     background-color: white;
 }
-.optionsD p:focus{
-    border-radius: 10px;
-    color: black;
-    background-color: white;
-}
-
 
 .optionsD li{
     margin: 3rem;
     width: 18vw;
     height: 6vh;
     list-style: none;
-
 }
+
 .contentD{
     width: 80vw;
     height: 80vh;
