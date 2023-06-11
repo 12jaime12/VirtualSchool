@@ -3,7 +3,7 @@
 } 
 .optionsD{
     background-color: #296ab1;
-    border-radius: 10px;
+    border-radius: 0 10px 10px 0;
     width: 20vw;
     min-height: 80vh;
     display: flex;
