@@ -3,7 +3,7 @@ import Horario1 from "./HorarioEscolar/Horario1/Horario1";
 import Horario2 from "./HorarioEscolar/Horario2/Horario2";
 import Horario3 from "./HorarioEscolar/Horario3/Horario3";
 import Horario4 from "./HorarioEscolar/Horario4/Horario4";
-import { Link } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 
 export const SwitchHorarios = ({ curso }) => {
   switch (curso) {
@@ -30,19 +30,19 @@ export const SwitchRol = ({ rol, curso }) => {
         <>
           <ul>
             <li>
-              <Link to="/dashboard/notasActual" className="link">
+              <NavLink to="/dashboard/notasActual" className="link">
                 <p>Notas curso {curso}</p>
-              </Link>
+              </NavLink>
             </li>
             <li>
-              <Link to="/dashboard/notasporcurso" className="link">
+              <NavLink to="/dashboard/notasporcurso" className="link">
                 <p>Notas por curso</p>
-              </Link>
+              </NavLink>
             </li>
             <li>
-              <Link to="/dashboard/notaporasignatura" className="link">
+              <NavLink to="/dashboard/notaporasignatura" className="link">
                 <p>Nota por asignatura</p>
-              </Link>
+              </NavLink>
             </li>
           </ul>
         </>
@@ -53,19 +53,19 @@ export const SwitchRol = ({ rol, curso }) => {
         <>
           <ul>
             <li>
-              <Link to="/dashboard/alumnosasignatura" className="link">
+              <NavLink to="/dashboard/alumnosasignatura" className="link">
                 <p>Alumnos asignatura</p>
-              </Link>
+              </NavLink>
             </li>
             <li>
-              <Link to="/dashboard/crearnota" className="link">
+              <NavLink to="/dashboard/crearnota" className="link">
                 <p>Crear nota</p>
-              </Link>
+              </NavLink>
             </li>
             <li>
-              <Link to="/dashboard/borrarnota" className="link">
+              <NavLink to="/dashboard/borrarnota" className="link">
                 <p>Borrar nota</p>
-              </Link>
+              </NavLink>
             </li>
           </ul>
         </>
@@ -76,19 +76,19 @@ export const SwitchRol = ({ rol, curso }) => {
         <>
           <ul>
             <li>
-              <Link to="/dashboard/crearasignatura" className="link">
+              <NavLink to="/dashboard/crearasignatura" className="link">
                 <p>Crear asignatura</p>
-              </Link>
+              </NavLink>
             </li>
             <li>
-              <Link to="/dashboard/añadiralumnoprofesor" className="link">
+              <NavLink to="/dashboard/añadiralumnoprofesor" className="link">
                 <p>Añadir alumno-profesor a la asignatura</p>
-              </Link>
+              </NavLink>
             </li>
             <li>
-              <Link to="/dashboard/profesorado" className="link">
+              <NavLink to="/dashboard/profesorado" className="link">
                 <p>Profesorado</p>
-              </Link>
+              </NavLink>
             </li>
           </ul>
         </>

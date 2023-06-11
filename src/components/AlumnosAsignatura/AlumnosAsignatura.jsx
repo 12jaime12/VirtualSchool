@@ -10,24 +10,27 @@ const AlumnosAsignatura = () => {
       setAlumns(await getNotasMisAlumns());
     })();
   }, []);
+
+  useEffect(() => {
+    console.log(alumns?.data.notasAlumns);
+  }, [alumns]);
   return (
     <>
       <div className="alumnosasignatura">
         <h1>Alumnos Asignatura</h1>
+        <p className="negro">
+          {alumns?.data?.name} {alumns?.data?.curso}
+        </p>
         <div>
-          <p>{alumn}</p>
           <table>
-            {profesores.data.map((element) => (
-              <tbody key={element._id}>
+            {alumns?.data?.notasAlumns?.map((element) => (
+              <tbody key={element.name}>
                 <tr>
                   <td className="nombre1">
                     <p>{element.name}</p>
                   </td>
                   <td className="asignatura1">
-                    <p>{element?.asignaturas[0]?.name}</p>
-                  </td>
-                  <td className="curso1">
-                    <p>{element?.asignaturas[0]?.curso}</p>
+                    <p>{element.nota}</p>
                   </td>
                 </tr>
               </tbody>

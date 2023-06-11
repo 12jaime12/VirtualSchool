@@ -81,3 +81,15 @@ export const getAllProfesores = async () => {
       return error;
     });
 };
+//----------------get-mis-alumns--------------
+export const getMisAlumns = async () => {
+  return API.get("/user/getMisAlumns", {
+    headers: {
+      Authorization: `Bearer ${updateToken()}`,
+    },
+  })
+    .then((res) => res)
+    .catch((error) => {
+      return error;
+    });
+};

@@ -25,7 +25,6 @@ const useAutoLogin = async (allUser, userlogin) => {
 
       const dataSting = JSON.stringify(dataCustom);
       userlogin(dataSting);
-      return <Navigate to="/dashboard" />;
     } else {
       return <Navigate to="/login" />;
     }

@@ -38,10 +38,26 @@ const useCheckCode = (res, setDeleteUser, setOkCheck) => {
   }
   //! ------200: testCheckOk:
   if (res?.data?.testCheckOk?.toString() == "true") {
+    if (localStorage.getItem("user")) {
+      const currentUser = localStorage.getItem("user");
+      const parseCurrentUser = JSON.parse(currentUser);
+      const customUser = {
+        ...parseCurrentUser,
+        check: true,
+      };
+      const customUserString = JSON.stringify(customUser);
+
+      //! No utilzamos directamente el userLogin porque ya estamos logados solo tenemos...ç
+      //! que actualizar el localstorage y el user el contesto para que la nav se renderice correctamente
+
+      //userlogin(customUserString);
+      setUser(() => customUser);
+      localStorage.setItem("user", customUserString);
+    }
     setOkCheck(() => true);
     Swal.fire({
       icon: "success",
-      title: "Ok codigo correcto ✅",
+      title: "Ok correct code ✅",
       showConfirmButton: false,
       timer: 1500,
     });
