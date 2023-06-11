@@ -15,7 +15,7 @@
     cursor: pointer;
     font-weight: 800;
     width: 18vw;
-    height: 6vh;
+    min-height: 6vh;
     display: flex;
     justify-content: center;
     align-items: center;

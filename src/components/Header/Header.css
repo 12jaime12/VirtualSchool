@@ -67,7 +67,7 @@ nav a {
 }
 nav a:hover, nav p:hover { 
 	background-color: white; 
-    color: #242424;
+    color: #1a5089;
 }
 nav ul ul {
 	display: none;

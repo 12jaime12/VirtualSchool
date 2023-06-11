@@ -61,18 +61,18 @@ const CrearAsignatura = () => {
                 Curso
               </label>
             </div>
-          </div>
-
-          <div className="btn-container">
+            <div className="btn-container">
             <button
               className="btn"
               type="submit"
               disabled={send}
               style={{ background: send ? "#001d86" : "#001d86b1" }}
             >
-              Acceso
+              Crear
             </button>
           </div>
+          </div>
+
         </form>
       </div>
     </>
