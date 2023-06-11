@@ -29,6 +29,22 @@ select{
     cursor: pointer;
 }
 
-option{
-    color: black;
+tbody> tr > td{
+    width: 10rem;
+}
+
+tbody> tr > td.asignatura2{
+    background-color: #1a5089;
+}
+
+tbody> tr > td.nota2{
+    border: 3px solid #296ab1;
+}
+
+.asignatura2 p{
+    color: white;
+}
+
+.nota2 p{
+    color: #296ab1;
 }

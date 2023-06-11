@@ -34,11 +34,11 @@ const NotasPorCurso = () => {
             {notas?.data?.map((element) => (
               <tbody key={element.asignatura}>
                 <tr>
-                  <td>
-                    <p className="asignatura">{element.asignatura}</p>
+                  <td className="asignatura2">
+                    <p>{element.asignatura}</p>
                   </td>
-                  <td>
-                    <p className="nota">{element.nota}</p>
+                  <td className="nota2">
+                    <p>{element.nota}</p>
                   </td>
                 </tr>
               </tbody>
