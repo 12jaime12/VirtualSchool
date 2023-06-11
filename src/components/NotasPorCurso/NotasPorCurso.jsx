@@ -12,7 +12,7 @@ const NotasPorCurso = () => {
   }, [curso]);
 
   useEffect(() => {
-    console.log(notas);
+    console.log(notas?.data);
   }, [notas]);
   return (
     <>
@@ -29,7 +29,22 @@ const NotasPorCurso = () => {
           <option value="3ESO">3 ESO</option>
           <option value="4ESO">4 ESO</option>
         </select>
-        <div></div>
+        <div>
+          <table>
+            {notas?.data?.map((element) => (
+              <tbody key={element.asignatura}>
+                <tr>
+                  <td>
+                    <p className="asignatura">{element.asignatura}</p>
+                  </td>
+                  <td>
+                    <p className="nota">{element.nota}</p>
+                  </td>
+                </tr>
+              </tbody>
+            ))}
+          </table>
+        </div>
       </div>
     </>
   );
