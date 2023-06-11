@@ -51,14 +51,14 @@ const NotaPorAsignatura = () => {
         <table>
           <tbody>
             <tr>
-              <td>
-                <p className="asignatura">{asigver?.data?.name}</p>
+              <td className="asignatura3">
+                <p>{asigver?.data?.name}</p>
               </td>
-              <td>
-                <p className="nota">{asigver?.data?.curso}</p>
+              <td className="nota3">
+                <p>{asigver?.data?.curso}</p>
               </td>
-              <td>
-                <p className="nota">{asigver?.data?.nota}</p>
+              <td className="nota4">
+                <p>{asigver?.data?.nota}</p>
               </td>
             </tr>
           </tbody>

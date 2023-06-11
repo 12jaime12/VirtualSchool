@@ -27,10 +27,7 @@ select{
     text-transform: uppercase;
     border-radius: 5px;
     cursor: pointer;
-}
-
-tbody> tr > td{
-    width: 10rem;
+    margin-bottom: 20px;
 }
 
 tbody> tr > td.asignatura2{

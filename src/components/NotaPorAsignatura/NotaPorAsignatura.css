@@ -16,9 +16,22 @@
   text-transform: uppercase;
 }
 
-.notaporasignatura select{
-  color: black;
+tbody> tr > td.asignatura3{
+  background-color: #1a5089;
 }
-.notaporasignatura option{
-  color: black;
+
+tbody> tr > td.nota3{
+  background-color: #296ab1;
+}
+
+tbody> tr > td.nota4{
+  border: 3px solid #296ab1;
+}
+
+.asignatura3, .nota3, p{
+  color: white;
+}
+
+.nota4 p{
+  color: #296ab1;
 }
