@@ -52,17 +52,6 @@ const CheckCode = () => {
     if (!localStorage.getItem("user")) {
       useAutoLogin(allUser, userlogin);
     } else {
-      const currentUser = localStorage.getItem("user");
-      const parseCurrentUser = JSON.parse(currentUser);
-      const customUser = {
-        ...parseCurrentUser,
-        check: true,
-      };
-      const customUserString = JSON.stringify(customUser);
-
-      setUser(customUser);
-      localStorage.setItem("user", customUserString);
-
       return <Navigate to="/dashboard" />;
     }
   }
@@ -111,8 +100,8 @@ const CheckCode = () => {
 
           <p className="bottom-text">
             <small>
-              Si el código introducido no es correcto, su usuario será
-              eliminado de la base de datos y tendrá que registrarse de nuevo.{" "}
+              Si el código introducido no es correcto, su usuario será eliminado
+              de la base de datos y tendrá que registrarse de nuevo.{" "}
             </small>
           </p>
         </form>
