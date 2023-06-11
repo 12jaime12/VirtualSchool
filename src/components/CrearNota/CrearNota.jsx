@@ -34,9 +34,9 @@ const CrearNota = () => {
   return (
     <div className="crearnota">
       <h1>Crear Nota</h1>
-      <p className="negro">
+      <h2 className="negro">
         {alumns?.data?.name} {alumns?.data?.curso} {alumns?.data?.year}
-      </p>
+      </h2>
       <div>
         {alumns?.data?.alumn?.length > 0 ? (
           <PositionCard data={alumns?.data?.alumn} setAlumn={setAlumnCurrent} />
@@ -45,7 +45,10 @@ const CrearNota = () => {
         )}
       </div>
       <form onSubmit={handleSubmit(formSubmit)}>
-        <div className="name-container form-group">
+        <div className="name-container1 form-group">
+        <label htmlFor="custom-input" className="custom-placeholder">
+            Agregar nota al alumno
+          </label>
           <input
             className="input-nota"
             type="text"
@@ -54,9 +57,7 @@ const CrearNota = () => {
             autoComplete="false"
             {...register("nota", { required: true })}
           />
-          <label htmlFor="custom-input" className="custom-placeholder">
-            Nota
-          </label>
+
           <div className="btn-container">
             <button
               className="btn"

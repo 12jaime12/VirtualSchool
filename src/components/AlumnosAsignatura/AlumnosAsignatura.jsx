@@ -18,9 +18,9 @@ const AlumnosAsignatura = () => {
     <>
       <div className="alumnosasignatura">
         <h1>Alumnos Asignatura</h1>
-        <p className="negro">
+        <h2 className="negro">
           {alumns?.data?.name} {alumns?.data?.curso}
-        </p>
+        </h2>
         <div>
           <table>
             {alumns?.data?.notasAlumns?.map((element) => (
@@ -29,7 +29,7 @@ const AlumnosAsignatura = () => {
                   <td className="nombre1">
                     <p>{element.name}</p>
                   </td>
-                  <td className="asignatura1">
+                  <td className="nota">
                     <p>{element.nota}</p>
                   </td>
                 </tr>

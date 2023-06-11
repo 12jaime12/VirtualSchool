@@ -5,13 +5,51 @@
   flex-direction: column;
 }
 .crearnota h1 {
-  color: black;
+  border: 5px solid #296ab1;
+	color: #296ab1;
+  border-radius: 15px;
+	text-align: center;
+	font-size: 40px;
+  font-weight: bold;
+	margin:2% 2% 2% 2%;
+  width: 80vh;
+  text-transform: uppercase;
 }
-.carta{
+/* .carta{
   border: 3px solid black;
-}
+} */
 .carta img{
   width: 100px;
   border-radius: 50px;
   border: 3px solid black;
+}
+
+.name-container1{
+  background: #1a50898e;
+  width: 39vw;
+  padding: 15px 25px 30px;
+  border-radius: 5px;
+  margin: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+}
+
+.crearnota label{
+  color: #001d86;
+  font-weight: normal;
+}
+
+.input-nota{
+  width: 20%;
+  padding: 10px;
+  border: #ddd 1px solid;
+  border-radius: 5px;
+  font-family: inherit;
+  caret-color: #001d86;
+}
+
+.input-nota:focus{
+  outline-color: #001d86;
 }

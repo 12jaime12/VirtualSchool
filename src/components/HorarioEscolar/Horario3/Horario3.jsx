@@ -31,8 +31,8 @@ const Horario3 = () => {
             <td className="Mates">
               Mates <span> Aula </span>{" "}
             </td>
-            <td className="Edfisica">
-              Educación física<span> Gimnasio</span>{" "}
+            <td className="Fisica">
+              Física<span> Gimnasio</span>{" "}
             </td>
           </tr>
           <tr>
@@ -100,9 +100,9 @@ const Horario3 = () => {
             <td className="Lengua">
               Lengua <span> Aula</span>
             </td>
-            <td className="Tecno">
+            <td className="Bio">
               {" "}
-              Tecnología <span> Info2</span>
+              Biología <span> Info2</span>
             </td>
             <td className="Mates">
               Mates <span> Aula </span>
@@ -113,16 +113,16 @@ const Horario3 = () => {
             <td className="Mates">
               Mates <span> Aula </span>
             </td>
-            <td className="Tecno">
+            <td className="Bio">
               {" "}
-              Tecnología <span> Info2</span>
+              Biología <span> Info2</span>
             </td>
             <td className="Lengua">
               Lengua <span> Aula</span>
             </td>
-            <td className="Tecno">
+            <td className="Bio">
               {" "}
-              Tecnología <span> Info2</span>
+              Biología <span> Info2</span>
             </td>
             <td className="Mates">
               Mates <span> Aula </span>
@@ -133,9 +133,9 @@ const Horario3 = () => {
             <td className="Mates">
               Mates <span> Aula </span>
             </td>
-            <td className="Tecno">
+            <td className="Bio">
               {" "}
-              Tecnología <span> Info2</span>
+              Biología <span> Info2</span>
             </td>
             <td className="Lengua">
               Lengua <span> Aula</span>
