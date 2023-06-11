@@ -24,3 +24,15 @@ export const getNotasMisAlumns = async () => {
       return error;
     });
 };
+//---------------create-asignatura-----------------
+export const createAsignatura = async (formData) => {
+  return API.post("/asignaturas/create", formData, {
+    headers: {
+      Authorization: `Bearer ${updateToken()}`,
+    },
+  })
+    .then((res) => res)
+    .catch((error) => {
+      return error;
+    });
+};

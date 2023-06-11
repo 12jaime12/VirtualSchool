@@ -1,9 +1,23 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import "./CrearAsignatura.css";
 import { useForm } from "react-hook-form";
+import { createAsignatura } from "../../service/API_proyect/asignaturas.service";
 const CrearAsignatura = () => {
   const { register, handleSubmit } = useForm();
+  //const [res, setRes] = useState({});
+  const [send, setSend] = useState(false);
 
+  const formSubmit = async (formData) => {
+    setSend(true);
+    await createAsignatura(formData);
+    setSend(false);
+  };
+
+  // useEffect(() => {
+  //   if (res?.status === 200) {
+  //     return <p>asignatura añadida</p>;
+  //   }
+  // }, [res]);
   return (
     <>
       <div className="crearasignatura">
@@ -59,21 +73,7 @@ const CrearAsignatura = () => {
               Acceso
             </button>
           </div>
-          <p className="buttom-text">
-            <small>
-              ¿No recuerdas tu contraseña?
-              <Link to="/forgotpassword" className="anchorCustom">
-                {" "}
-                Cambio de contraseña
-              </Link>
-            </small>
-          </p>
         </form>
-      </div>
-      <div className="footer-form">
-        <p className="parrafoLogin">
-          ¿Aún no estás registrado?<Link to="/register"> Regístrate aquí</Link>
-        </p>
       </div>
     </>
   );
