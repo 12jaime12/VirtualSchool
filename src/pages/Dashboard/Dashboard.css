@@ -29,6 +29,11 @@
     color: black;
     background-color: white;
 }
+.optionsD p:focus{
+    border-radius: 10px;
+    color: black;
+    background-color: white;
+}
 
 .optionsD li{
     margin: 3rem;
