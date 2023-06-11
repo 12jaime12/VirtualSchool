@@ -24,3 +24,15 @@ export const getNotasCurso = async (curso) => {
       return error;
     });
 };
+//------------------get-one-nota-------------------
+export const getOneNota = async (asig) => {
+  return API.get(`/notas/oneNota/${asig}`, {
+    headers: {
+      Authorization: `Bearer ${updateToken()}`,
+    },
+  })
+    .then((res) => res)
+    .catch((error) => {
+      return error;
+    });
+};
