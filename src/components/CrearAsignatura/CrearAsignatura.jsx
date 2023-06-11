@@ -1,15 +1,15 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import "./CrearAsignatura.css";
 import { useForm } from "react-hook-form";
 import { createAsignatura } from "../../service/API_proyect/asignaturas.service";
 const CrearAsignatura = () => {
   const { register, handleSubmit } = useForm();
-  //const [res, setRes] = useState({});
   const [send, setSend] = useState(false);
 
   const formSubmit = async (formData) => {
     setSend(true);
     await createAsignatura(formData);
+
     setSend(false);
   };
 
@@ -62,17 +62,16 @@ const CrearAsignatura = () => {
               </label>
             </div>
             <div className="btn-container">
-            <button
-              className="btn"
-              type="submit"
-              disabled={send}
-              style={{ background: send ? "#001d86" : "#001d86b1" }}
-            >
-              Crear
-            </button>
+              <button
+                className="btn"
+                type="submit"
+                disabled={send}
+                style={{ background: send ? "#001d86" : "#001d86b1" }}
+              >
+                Crear
+              </button>
+            </div>
           </div>
-          </div>
-
         </form>
       </div>
     </>

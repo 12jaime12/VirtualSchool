@@ -36,3 +36,15 @@ export const getOneNota = async (asig) => {
       return error;
     });
 };
+//-----------------create-nota----------------------
+export const createNota = async (formData) => {
+  return API.post("/notas/create", formData, {
+    headers: {
+      Authorization: `Bearer ${updateToken()}`,
+    },
+  })
+    .then((res) => res)
+    .catch((error) => {
+      return error;
+    });
+};

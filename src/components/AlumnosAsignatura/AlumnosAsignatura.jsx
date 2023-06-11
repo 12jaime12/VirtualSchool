@@ -12,7 +12,7 @@ const AlumnosAsignatura = () => {
   }, []);
 
   useEffect(() => {
-    console.log(alumns?.data.notasAlumns);
+    console.log(alumns?.data);
   }, [alumns]);
   return (
     <>
