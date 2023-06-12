@@ -93,3 +93,15 @@ export const getMisAlumns = async () => {
       return error;
     });
 };
+//------------get-all-alum----------------
+export const getAllAlumn = async (id) => {
+  return API.get("/user/getAllAlumn", {
+    headers: {
+      Authorization: `Bearer ${updateToken()}`,
+    },
+  })
+    .then((res) => res)
+    .catch((error) => {
+      return error;
+    });
+};
