@@ -35,9 +35,9 @@ const BorrarNota = () => {
       <div className="borrarnota">
         <h1>Borrar Nota</h1>
         <div>
-          <p className="negro">
+          <h2 className="h2BorrarNota">
             {notas?.data?.name} {notas?.data?.curso}
-          </p>
+          </h2>
         </div>
         <div>
           <PositionCard
@@ -45,7 +45,7 @@ const BorrarNota = () => {
             setAlumn={setAlumnCurrent}
           />
         </div>
-        <button onClick={() => borrar()}>Borrar</button>
+        <button className="buttonBorrarNota" onClick={() => borrar()}>Borrar</button>
       </div>
     </>
   );

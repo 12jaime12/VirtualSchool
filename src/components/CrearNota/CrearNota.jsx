@@ -33,7 +33,7 @@ const CrearNota = () => {
   }, [alumns]);
   return (
     <div className="crearnota">
-      <h1>Crear Nota</h1>
+      <h1 className="tituloCrearNota">Crear Nota</h1>
       <h2 className="negro">
         {alumns?.data?.name} {alumns?.data?.curso} {alumns?.data?.year}
       </h2>
@@ -47,7 +47,7 @@ const CrearNota = () => {
       <form onSubmit={handleSubmit(formSubmit)}>
         <div className="name-container1 form-group">
         <label htmlFor="custom-input" className="custom-placeholder">
-            Agregar nota al alumno
+            <p className="pCrearNota">Agregar nota al alumno</p>
           </label>
           <input
             className="input-nota"

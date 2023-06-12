@@ -44,7 +44,7 @@ const PositionCard = ({ data, setAlumn }) => {
         <img className="fotoCarta" src={data[position]?.image} alt={data[position]?.name} />
         <h3 className="negro">{data[position]?.name}</h3>
         {data[position]?.nota ? (
-          <p className="negro">Nota: {data[position]?.nota}</p>
+          <p className="pNota">Nota: {data[position]?.nota}</p>
         ) : null}
       </figure>
       <img
