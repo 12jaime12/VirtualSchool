@@ -20,132 +20,127 @@ const Horario2 = () => {
           <tr>
             <td className="horas">8:30 a 9:25 </td>
             <td className="Ingles">
-              Inglés <span> Aula</span>
+              Inglés 
             </td>
             <td className="Lengua">
-              Lengua <span> Aula</span>
+              Lengua 
             </td>
             <td className="Lengua">
-              Lengua <span> Aula</span>
+              Lengua 
             </td>
             <td className="Fisica">
-              Física <span> Aula </span>{" "}
+              Física 
             </td>
             <td className="Mates">
-              Matemáticas <span> Aula</span>
+              Matemáticas 
             </td>
           </tr>
           <tr>
             <td className="horas">9:25 a 10:20 </td>
             <td className="Fisica">
-              Física <span> Aula </span>{" "}
+              Física 
             </td>
             <td className="Musica">
-              Música <span> Aula </span>
+              Música 
             </td>
             <td className="Mates">
-              Matemáticas <span> Aula</span>
+              Matemáticas 
             </td>
             <td className="Lengua">
-              Lengua <span> Aula</span>
+              Lengua 
             </td>
             <td className="Bio">
-              {" "}
-              Biología <span> Info2</span>
+              Biología 
             </td>
           </tr>
           <tr>
             <td className="horas">10:20 a 11:10 </td>
             <td className="Musica">
-              Música <span> Aula </span>
+              Música 
             </td>
             <td className="Mates">
-              Matemáticas <span> Aula</span>
+              Matemáticas 
             </td>
             <td className="Musica">
-              Música <span> Aula </span>
+              Música 
             </td>
             <td className="Bio">
-              {" "}
-              Biología <span> Info2</span>
+              Biología 
             </td>
             <td className="Fisica">
-              Física <span> Aula </span>{" "}
+              Física 
             </td>
           </tr>
           <tr>
             <td className="horas">11:10 a 11:35 </td>
             <td className="recreo">
-              Recreo <span> Patio</span>
+              Recreo 
             </td>
             <td className="recreo">
-              Recreo <span> Patio</span>
+              Recreo 
             </td>
             <td className="recreo">
-              Recreo <span> Patio</span>
+              Recreo 
             </td>
             <td className="recreo">
-              Recreo <span> Patio</span>
+              Recreo 
             </td>
             <td className="recreo">
-              Recreo <span> Patio</span>
+              Recreo 
             </td>
           </tr>
           <tr>
             <td className="horas">11:35 a 12:30 </td>
             <td className="Mates">
-              Matemáticas <span> Aula</span>
+              Matemáticas 
             </td>
             <td className="Ingles">
-              Inglés <span> Aula</span>
+              Inglés 
             </td>
             <td className="Bio">
-              {" "}
-              Biología <span> Info2</span>
+              Biología 
             </td>
             <td className="Ingles">
-              Inglés <span> Aula</span>
+              Inglés 
             </td>
             <td className="Lengua">
-              Lengua <span> Aula</span>
+              Lengua 
             </td>
           </tr>
           <tr>
             <td className="horas">12:30 a 13:25 </td>
             <td className="Bio">
-              {" "}
-              Biología <span> Info2</span>
+              Biología 
             </td>
             <td className="Fisica">
-              Física <span> Aula </span>{" "}
+              Física 
             </td>
             <td className="Ingles">
-              Inglés <span> Aula</span>
+              Inglés 
             </td>
             <td className="Musica">
-              Música <span> Aula </span>
+              Música 
             </td>
             <td className="Ingles">
-              Inglés <span> Aula</span>
+              Inglés 
             </td>
           </tr>
           <tr>
             <td className="horas">13:25 a 14:15</td>
             <td className="Lengua">
-              Lengua <span> Aula</span>
+              Lengua 
             </td>
             <td className="Bio">
-              {" "}
-              Biología <span> Info2</span>
+              Biología 
             </td>
             <td className="Fisica">
-              Física <span> Aula </span>{" "}
+              Física 
             </td>
             <td className="Mates">
-              Matemáticas <span> Aula</span>
+              Matemáticas 
             </td>
             <td className="Musica">
-              Música <span> Aula </span>
+              Música 
             </td>
           </tr>
         </tbody>

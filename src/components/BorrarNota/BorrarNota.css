@@ -7,13 +7,13 @@
 .borrarnota h1 {
   border: 5px solid #296ab1;
 	color: #296ab1;
-    border-radius: 15px;
+  border-radius: 15px;
 	text-align: center;
-	font-size: 40px;
-    font-weight: bold;
+	font-size: 100;
+  font-weight: bold;
 	margin:2% 2% 2% 2%;
-    width: 80vh;
-    text-transform: uppercase;
+  width: 80vh;
+  text-transform: uppercase;
 }
 .negro{
   color: black;

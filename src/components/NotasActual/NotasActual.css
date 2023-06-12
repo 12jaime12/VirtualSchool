@@ -23,9 +23,6 @@ tbody> tr > td{
 
 tbody> tr > td.asignatura{
     background-color: #1a5089;
-    display: flex;
-    justify-content: center;
-    align-items: center;
 }
 
 tbody> tr > td.curso{
@@ -34,16 +31,15 @@ tbody> tr > td.curso{
 
 tbody> tr > td.nota{
     border: 3px solid #296ab1;
-    display: flex;
-    justify-content: center;
-    align-items: center;
 }
 
 .asignatura, .curso, p{
     color: white;
+    padding-top: 7.5px;
 }
 
 .nota p{
     color: #296ab1;
+    padding-top: 8px;
 }
 

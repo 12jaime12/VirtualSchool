@@ -18,9 +18,6 @@
 
 tbody> tr > td.asignatura3{
   background-color: #1a5089;
-  display: flex;
-  justify-content: center;
-  align-items: center;
 }
 
 tbody> tr > td.nota3{
@@ -29,9 +26,6 @@ tbody> tr > td.nota3{
 
 tbody> tr > td.nota4{
   border: 3px solid #296ab1;
-  display: flex;
-  justify-content: center;
-  align-items: center;
 }
 
 .asignatura3, .nota3, p{

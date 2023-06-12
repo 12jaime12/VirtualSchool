@@ -71,54 +71,29 @@ th {
 }
 
 .horas{
-	margin: 0;
-	padding: 0;
 	background-color:#FFD180 ;
 }
 .Lengua { 
-    padding: 0; 
-    margin: 0; 
     background-color: #A5D6A7; 
 }
 
 .Mates{ 
-    padding:0; 
-    margin:0; 
     background-color: #FF8A80;
 }
 .Ingles{ 
-    padding:0; 
-    margin:0; 
     background-color: #B39DDB ;
 }
 .Musica { 
-    padding:0; 
-    margin:0; 
     background-color: #FFCDD2 ;
 }
 .Bio{ 
-    padding:0; 
-    margin:0; 
     background-color:#008080 ;
 }
 .Fisica{ 
-    padding:0; 
-    margin:0; 
     background-color:#BCAAA4;
 }
 .recreo {
     background-color: #FFD180;
-    margin:0;
-    padding:0;
-}
-td span {
-	display: block;
-	text-align: center;
-	color: #800000;
-	visibility: hidden;
-}
-td:active > span {
-	visibility: visible;
 }
 
 td{
