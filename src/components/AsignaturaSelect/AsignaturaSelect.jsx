@@ -31,8 +31,8 @@ const AsignaturaSelect = () => {
     setFilterData(data);
   };
   const añadirAlumn = async (idalumn) => {
-    //console.log(idalumn);
-    const formData = { idAlumn: idalumn };
+    console.log(idalumn._id);
+    const formData = { idAlumn: idalumn._id };
     await addAlumn(id, formData);
   };
   const addTeacher = async () => {
@@ -84,14 +84,16 @@ const AsignaturaSelect = () => {
                 <figure key={element._id} className="figureAlumns">
                   <img src={element.image} alt={element.name} />
                   <p className="negro">{element.name}</p>
-                  <button onClick={() => añadirAlumn()}>Añadir Alumno</button>
+                  <button onClick={() => añadirAlumn(element)}>
+                    Añadir Alumno
+                  </button>
                 </figure>
               ))
             : alumns.data.slice(0, 3).map((element) => (
                 <figure key={element._id} className="figureAlumns">
                   <img src={element.image} alt={element.name} />
                   <p className="negro">{element.name}</p>
-                  <button onClick={() => añadirAlumn(element._id)}>
+                  <button onClick={() => añadirAlumn(element)}>
                     Añadir Alumno
                   </button>
                 </figure>
