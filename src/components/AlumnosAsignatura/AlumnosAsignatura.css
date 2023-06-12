@@ -23,24 +23,14 @@
 
 tbody> tr > td.nombre1{
   background-color: #1a5089;
-  display: flex;
-  justify-content: center;
-  align-items: center; 
-  border-color: #1a5089;
 } 
 
 td.nota6 p{
   color: #296ab1;
-  margin-top: 10px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
 }
 
 tbody> tr > td.nota6{
   border: 3px solid #296ab1;
 }
 
-.tablaAlumnosAsignatura{
-  width: 23vw;
-}
+
