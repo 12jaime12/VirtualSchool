@@ -23,12 +23,17 @@
   font-weight: 700;
   border: none;
   border-radius: 5px;
-  width: 70px;
+  width: 80px;
   height: 40px;
   font-weight: normal;
   font-size: medium;
   color: white;
   cursor: pointer;
   margin-top: 10px;
-  background-color: #001D86;
+  background-color: #001D86B1;
 }
+
+.buttonBorrarNota:focus,
+.buttonBorrarNota:focus-visible {
+  outline: 4px auto -webkit-focus-ring-color;
+}  

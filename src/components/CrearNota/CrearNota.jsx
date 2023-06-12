@@ -29,7 +29,7 @@ const CrearNota = () => {
   }, [alumnCurrent]);
 
   useEffect(() => {
-    console.log(alumns.data.alumn);
+    console.log(alumns?.data?.alumn);
   }, [alumns]);
   return (
     <div className="crearnota">

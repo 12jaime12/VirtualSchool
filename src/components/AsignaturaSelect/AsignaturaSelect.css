@@ -9,15 +9,13 @@
       color: #296ab1;
     border-radius: 15px;
       text-align: center;
-      font-size: 40px;
+      font-size: 100;
     font-weight: bold;
       margin:2% 2% 2% 2%;
     text-transform: uppercase;
     width: 55vw;
   }
-  .negro{
-    color: black;
-  }
+  
   .flexAlumns{
     display: flex;
     justify-content: center;
@@ -34,7 +32,7 @@
     align-items: center;
     flex-direction: column;
     width: 200px;
-    border: 5px solid #296ab1;
+    border: 2px solid #296ab1;
     color: #296ab1;
     border-radius: 15px;
     margin: 2rem;
@@ -43,3 +41,46 @@
     width: 100px;
     border-radius: 50px;
   }
+
+  .flexWrapAlumns button{
+  border: none;
+  border-radius: 5px;
+  height: 40px;
+  font-size: medium;
+  color: white;
+  cursor: pointer;
+  margin-top: 10px;
+  background-color: #001D86B1;
+  width: 100%;
+  }
+  
+  .flexWrapAlumns button:focus,
+  .flexWrapAlumns button:focus-visible {
+  outline: 4px auto -webkit-focus-ring-color;
+}  
+
+.flexWrapProfesores button{
+  border: none;
+  border-radius: 5px;
+  height: 40px;
+  font-size: medium;
+  color: white;
+  cursor: pointer;
+  margin-top: 10px;
+  background-color: #001D86B1;
+  margin-bottom: 2rem;
+  width: 100%;
+  }
+  
+  .flexWrapProfesores button:focus,
+  .flexWrapProfesores button:focus-visible {
+  outline: 4px auto -webkit-focus-ring-color;
+}  
+
+.carruselProfesores{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+}

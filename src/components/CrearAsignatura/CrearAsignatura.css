@@ -19,18 +19,14 @@
 
 .name-container{
   background: #1a50898e;
-  width: 39vw;
   padding: 15px 25px 30px;
   border-radius: 5px;
   margin: 20px;
-  height: 50vh;
-  
 }
 
 .crearasignatura label{
   color: #001d86;
   font-weight: normal;
-  
 }
 
 .input-user{
@@ -45,4 +41,3 @@
 .input-user:focus{
   outline-color: #001d86;
 }
-

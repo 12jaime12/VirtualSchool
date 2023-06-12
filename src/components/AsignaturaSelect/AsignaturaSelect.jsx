@@ -62,9 +62,9 @@ const AsignaturaSelect = () => {
       <h1>
         {asignatura?.data.name} {asignatura?.data.curso} {asignatura?.data.year}
       </h1>
-      <div>
+      <div className="flexWrapProfesores">
         {JSON.stringify(asignatura?.data.teacher) == "[]" && (
-          <div>
+          <div className="carruselProfesores">
             <figure>
               <h3 className="negro">Profesores</h3>
               <PositionCard
@@ -72,7 +72,7 @@ const AsignaturaSelect = () => {
                 setAlumn={setTeacherCurrent}
               />
             </figure>
-            <button onClick={() => addTeacher()}>Añádir Profesor</button>
+            <button onClick={() => addTeacher()}>Añadir Profesor</button>
           </div>
         )}
       </div>

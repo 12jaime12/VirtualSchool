@@ -56,6 +56,11 @@ h1.tituloCrearNota {
   margin-top: 20px;
 }
 
+.pCrearNota{
+  color: #001d86;
+  font-weight: bolder;
+}
+
 .input-nota{
   width: 20%;
   padding: 10px;
@@ -63,11 +68,6 @@ h1.tituloCrearNota {
   border-radius: 5px;
   font-family: inherit;
   caret-color: #001d86;
-}
-
-.pCrearNota{
-  color: #001d86;
-  font-weight: bolder;
 }
 
 .input-nota:focus{
