@@ -43,6 +43,9 @@ const PositionCard = ({ data, setAlumn }) => {
       <figure className="carta" id={data[position]?._id}>
         <img src={data[position]?.image} alt={data[position]?.name} />
         <h3 className="negro">{data[position]?.name}</h3>
+        {data[position]?.nota ? (
+          <p className="negro">Nota: {data[position]?.nota}</p>
+        ) : null}
       </figure>
       <img
         className="flecha"

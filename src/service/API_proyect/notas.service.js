@@ -48,3 +48,27 @@ export const createNota = async (formData) => {
       return error;
     });
 };
+//--------------get-mis-notas-------------------
+export const getMisNotas = async () => {
+  return API.get("/notas/getMisNotas", {
+    headers: {
+      Authorization: `Bearer ${updateToken()}`,
+    },
+  })
+    .then((res) => res)
+    .catch((error) => {
+      return error;
+    });
+};
+//--------------delete-notas----------------
+export const deleteNotas = async (id) => {
+  return API.delete(`/notas/delete/${id}`, {
+    headers: {
+      Authorization: `Bearer ${updateToken()}`,
+    },
+  })
+    .then((res) => res)
+    .catch((error) => {
+      return error;
+    });
+};
