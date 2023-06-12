@@ -15,15 +15,23 @@
   text-transform: uppercase;
   width: 55vw;
 }
-.negro{
-  color: black;
-}
 .cartaAsignatura{
-  border: solid 3px black;
+  border: solid 2px #296ab1;
+  height: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
+
+.azul{
+  color: #296ab1;
+}
+
 .cartaAsignatura:hover{
-  background-color: black;
-  .negro{
+  cursor: pointer;
+  background-color: #296ab1;
+  /* color: white; */
+  .azul{
     color: white;
   }
 }

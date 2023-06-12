@@ -27,9 +27,9 @@ const AñadirAlumnoProfesor = () => {
                 navigate(`/dashboard/AddAlumnTeacher/${element._id}`)
               }
             >
-              <h2 className="negro">
+              <h3 className="azul">
                 {element.name} {element.curso} {element.year}
-              </h2>
+              </h3>
             </figure>
           ))}
         </div>
