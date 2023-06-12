@@ -9,15 +9,13 @@
 	color: #296ab1;
   border-radius: 15px;
 	text-align: center;
-	font-size: 40px;
+	font-size: 100;
   font-weight: bold;
 	margin:2% 2% 2% 2%;
   width: 80vh;
   text-transform: uppercase;
 }
-/* .carta{
-  border: 3px solid black;
-} */
+
 .carta img{
   width: 100px;
   border-radius: 50px;

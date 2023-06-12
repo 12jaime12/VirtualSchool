@@ -10,7 +10,7 @@
 	color: #296ab1;
     border-radius: 15px;
 	text-align: center;
-	font-size: 40px;
+	font-size: 100;
     font-weight: bold;
 	margin:2% 2% 2% 2%;
     width: 80vh;
@@ -23,6 +23,9 @@ tbody> tr > td{
 
 tbody> tr > td.asignatura{
     background-color: #1a5089;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 tbody> tr > td.curso{
@@ -31,6 +34,9 @@ tbody> tr > td.curso{
 
 tbody> tr > td.nota{
     border: 3px solid #296ab1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .asignatura, .curso, p{
@@ -41,7 +47,3 @@ tbody> tr > td.nota{
     color: #296ab1;
 }
 
-
-/* table{
-    border: 2px solid black;
-} */

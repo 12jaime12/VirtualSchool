@@ -10,7 +10,7 @@
 	color: #296ab1;
   border-radius: 15px;
 	text-align: center;
-	font-size: 40px;
+	font-size: 100;
   font-weight: bold;
 	margin:2% 2% 2% 2%;
   width: 80vh;
@@ -21,9 +21,26 @@
   color: black;
 }
 
-/* .negro{
-  background-color: #296ab1;
-  width: 80vh;
-  text-align: center;
-  border-radius: 15px;
-} */
+tbody> tr > td.nombre1{
+  background-color: #1a5089;
+  display: flex;
+  justify-content: center;
+  align-items: center; 
+  border-color: #1a5089;
+} 
+
+td.nota6 p{
+  color: #296ab1;
+  margin-top: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+tbody> tr > td.nota6{
+  border: 3px solid #296ab1;
+}
+
+.tablaAlumnosAsignatura{
+  width: 23vw;
+}

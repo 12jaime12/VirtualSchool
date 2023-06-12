@@ -30,7 +30,7 @@ const NotasPorCurso = () => {
           <option value="4ESO">4 ESO</option>
         </select>
         <div>
-          <table>
+          <table className="tableNotasPorCurso">
             {notas?.data?.map((element) => (
               <tbody key={element.asignatura}>
                 <tr>

@@ -9,7 +9,7 @@
 	color: #296ab1;
   border-radius: 15px;
 	text-align: center;
-	font-size: 40px;
+	font-size: 100;
   font-weight: bold;
 	margin:2% 2% 2% 2%;
   width: 80vh;
@@ -18,6 +18,9 @@
 
 tbody> tr > td.asignatura3{
   background-color: #1a5089;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 tbody> tr > td.nota3{
@@ -26,6 +29,9 @@ tbody> tr > td.nota3{
 
 tbody> tr > td.nota4{
   border: 3px solid #296ab1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .asignatura3, .nota3, p{
@@ -35,3 +41,4 @@ tbody> tr > td.nota4{
 .nota4 p{
   color: #296ab1;
 }
+

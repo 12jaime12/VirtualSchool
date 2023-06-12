@@ -40,6 +40,7 @@ const NotaPorAsignatura = () => {
             setAsig(e.target.value);
           }}
         >
+          <option>Asignatura</option>
           {asignaturas?.data?.length > 0 &&
             asignaturas.data.map((element) => (
               <option key={element._id} value={element._id}>

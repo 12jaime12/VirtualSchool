@@ -22,14 +22,14 @@ const AlumnosAsignatura = () => {
           {alumns?.data?.name} {alumns?.data?.curso}
         </h2>
         <div>
-          <table>
+          <table className="tablaAlumnosAsignatura">
             {alumns?.data?.notasAlumns?.map((element) => (
               <tbody key={element.name}>
                 <tr>
                   <td className="nombre1">
                     <p>{element.name}</p>
                   </td>
-                  <td className="nota">
+                  <td className="nota6">
                     <p>{element.nota}</p>
                   </td>
                 </tr>

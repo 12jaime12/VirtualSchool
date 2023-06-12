@@ -1,16 +1,15 @@
 .notasporcurso{
     display: flex;
-    flex-direction: column;
     justify-content: center;
     align-items: center;
-    
+    flex-direction: column;
 }
 .notasporcurso h1{
     border: 5px solid #296ab1;
 	color: #296ab1;
     border-radius: 15px;
 	text-align: center;
-	font-size: 40px;
+	font-size: 100;
     font-weight: bold;
 	margin:2% 2% 2% 2%;
     width: 80vh;
@@ -19,11 +18,13 @@
 
 select{
     color: black;
-    width: 40vh;
+    width: 40vw;
+    height: 5vh;
     text-align: center;
     border: 2.5px solid #296ab1;
 	color: #296ab1;
     font-weight: bold;
+    font-size: medium;
     text-transform: uppercase;
     border-radius: 5px;
     cursor: pointer;
@@ -32,6 +33,11 @@ select{
 
 tbody> tr > td.asignatura2{
     background-color: #1a5089;
+    border-color: #1a5089;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 }
 
 tbody> tr > td.nota2{
@@ -44,4 +50,9 @@ tbody> tr > td.nota2{
 
 .nota2 p{
     color: #296ab1;
+    padding-top: 10px;
+}
+
+.tableNotasPorCurso{
+    width: 23vw;
 }
