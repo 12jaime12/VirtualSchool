@@ -10,9 +10,11 @@ import React, { useEffect, useState } from "react";
 const BorrarNota = () => {
   const [notas, setNotas] = useState({ data: { notasAlumns: [] } });
   const [alumnCurrent, setAlumnCurrent] = useState("");
+  //const [actualizar, setActualizar] = useState(0);
 
   const borrar = async () => {
     await deleteNotas(alumnCurrent);
+    //setActualizar(actualizar + 1);
   };
 
   useEffect(() => {
