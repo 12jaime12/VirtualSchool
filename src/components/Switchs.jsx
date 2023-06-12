@@ -81,7 +81,7 @@ export const SwitchRol = ({ rol, curso }) => {
               </NavLink>
             </li>
             <li>
-              <NavLink to="/dashboard/añadiralumnoprofesor" className="link">
+              <NavLink to="/dashboard/AddAlumnTeacher" className="link">
                 <p>Añadir alumno-profesor a la asignatura</p>
               </NavLink>
             </li>

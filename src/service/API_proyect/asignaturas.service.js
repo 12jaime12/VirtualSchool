@@ -36,3 +36,27 @@ export const createAsignatura = async (formData) => {
       return error;
     });
 };
+//-------------get-asignaturas-------------------
+export const getAsignaturas = async () => {
+  return API.get("/asignaturas/getAllAsignaturas", {
+    headers: {
+      Authorization: `Bearer ${updateToken()}`,
+    },
+  })
+    .then((res) => res)
+    .catch((error) => {
+      return error;
+    });
+};
+//------------get-by-id------------------------
+export const getById = async (id) => {
+  return API.get(`/asignaturas/getById/${id}`, {
+    headers: {
+      Authorization: `Bearer ${updateToken()}`,
+    },
+  })
+    .then((res) => res)
+    .catch((error) => {
+      return error;
+    });
+};

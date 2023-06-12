@@ -2,6 +2,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-direction: column;
 }
 .añadiralumnoprofesor h1 {
   border: 5px solid #296ab1;
@@ -13,4 +14,16 @@
 	margin:2% 2% 2% 2%;
   text-transform: uppercase;
   width: 55vw;
+}
+.negro{
+  color: black;
+}
+.cartaAsignatura{
+  border: solid 3px black;
+}
+.cartaAsignatura:hover{
+  background-color: black;
+  .negro{
+    color: white;
+  }
 }

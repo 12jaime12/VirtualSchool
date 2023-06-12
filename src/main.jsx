@@ -22,6 +22,8 @@ import BorrarNota from "./components/BorrarNota/BorrarNota.jsx";
 import CrearAsignatura from "./components/CrearAsignatura/CrearAsignatura.jsx";
 import AñadirAlumnoProfesor from "./components/AñadirAlumnoProfesor/AñadirAlumnoProfesor.jsx";
 import Profesorado from "./components/Profesorado/Profesorado.jsx";
+import AddAlumnTeacher from "./pages/AddALumnTeacher/AddAlumnTeacher.jsx";
+import AsignaturaSelect from "./components/AsignaturaSelect/AsignaturaSelect.jsx";
 
 ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
@@ -64,9 +66,15 @@ ReactDOM.createRoot(document.getElementById("root")).render(
                 element={<CrearAsignatura />}
               />
               <Route
-                path="/dashboard/añadiralumnoprofesor"
-                element={<AñadirAlumnoProfesor />}
-              />
+                path="/dashboard/AddAlumnTeacher"
+                element={<AddAlumnTeacher />}
+              >
+                <Route index element={<AñadirAlumnoProfesor />} />
+                <Route
+                  path="/dashboard/AddAlumnTeacher/:id"
+                  element={<AsignaturaSelect />}
+                />
+              </Route>
               <Route path="/dashboard/profesorado" element={<Profesorado />} />
             </Route>
           </Route>
