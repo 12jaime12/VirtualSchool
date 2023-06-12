@@ -60,3 +60,27 @@ export const getById = async (id) => {
       return error;
     });
 };
+//------------add-alumn-------------------
+export const addAlumn = async (id, formData) => {
+  return API.post(`/asignaturas/addAlumn/${id}`, formData, {
+    headers: {
+      Authorization: `Bearer ${updateToken()}`,
+    },
+  })
+    .then((res) => res)
+    .catch((error) => {
+      return error;
+    });
+};
+//------------add-teacher-----------------
+export const addNewTeacher = async (id, formData) => {
+  return API.post(`/asignaturas/addTeacher/${id}`, formData, {
+    headers: {
+      Authorization: `Bearer ${updateToken()}`,
+    },
+  })
+    .then((res) => res)
+    .catch((error) => {
+      return error;
+    });
+};
