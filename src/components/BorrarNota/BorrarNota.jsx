@@ -34,18 +34,22 @@ const BorrarNota = () => {
     <>
       <div className="borrarnota">
         <h1>Borrar Nota</h1>
-        <div>
-          <h2 className="h2BorrarNota">
-            {notas?.data?.name} {notas?.data?.curso}
-          </h2>
+        <div className="div-BorrarNota">
+          <div>
+            <h2 className="h2BorrarNota">
+              {notas?.data?.name} {notas?.data?.curso}
+            </h2>
+          </div>
+          <div>
+            <PositionCard
+              data={notas?.data.notasAlumns}
+              setAlumn={setAlumnCurrent}
+            />
+          </div>
+          <button className="buttonBorrarNota" onClick={() => borrar()}>
+            Borrar
+          </button>
         </div>
-        <div>
-          <PositionCard
-            data={notas?.data.notasAlumns}
-            setAlumn={setAlumnCurrent}
-          />
-        </div>
-        <button className="buttonBorrarNota" onClick={() => borrar()}>Borrar</button>
       </div>
     </>
   );

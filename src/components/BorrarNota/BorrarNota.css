@@ -36,4 +36,15 @@
 .buttonBorrarNota:focus,
 .buttonBorrarNota:focus-visible {
   outline: 4px auto -webkit-focus-ring-color;
-}  
+}
+
+.div-BorrarNota{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 5rem;
+  background-color: #1a50898e;
+  border-radius: 20px;
+  padding: 2rem;
+}

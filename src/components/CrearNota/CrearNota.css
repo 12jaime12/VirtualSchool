@@ -25,10 +25,10 @@ h1.tituloCrearNota {
 }
 
 .name-container1{
-  background: #1a50898e;
-  width: 40vw;
+  border: 3px solid #1a50898e;
+  width: 15vw;
   padding: 15px 25px 30px;
-  border-radius: 5px;
+  border-radius: 10px;
   margin: 20px;
   display: flex;
   justify-content: center;
@@ -79,5 +79,15 @@ h1.tituloCrearNota {
   justify-content: center;
   align-items: center;
   flex-direction: column;
+}
+.div-crearNota{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 2rem;
+  background-color: #0f4a888e;
+  border-radius: 20px;
+  padding: 2rem 5rem;
 }
 

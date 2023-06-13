@@ -18,7 +18,7 @@ const AñadirAlumnoProfesor = () => {
     <>
       <div className="añadiralumnoprofesor">
         <h1>Añadir Alumnos y Profesores</h1>
-        <div>
+        <div className="wrapAsignatura">
           {asignaturas?.data?.map((element) => (
             <figure
               key={element._id}

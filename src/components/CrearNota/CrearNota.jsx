@@ -34,42 +34,47 @@ const CrearNota = () => {
   return (
     <div className="crearnota">
       <h1 className="tituloCrearNota">Crear Nota</h1>
-      <h2 className="negro">
-        {alumns?.data?.name} {alumns?.data?.curso} {alumns?.data?.year}
-      </h2>
-      <div>
-        {alumns?.data?.alumn?.length > 0 ? (
-          <PositionCard data={alumns?.data?.alumn} setAlumn={setAlumnCurrent} />
-        ) : (
-          <p className="negro">cargando</p>
-        )}
-      </div>
-      <form onSubmit={handleSubmit(formSubmit)}>
-        <div className="name-container1 form-group">
-        <label htmlFor="custom-input" className="custom-placeholder">
-            <p className="pCrearNota">Agregar nota al alumno</p>
-          </label>
-          <input
-            className="input-nota"
-            type="text"
-            id="nota"
-            name="nota"
-            autoComplete="false"
-            {...register("nota", { required: true })}
-          />
-
-          <div className="btn-container">
-            <button
-              className="btn"
-              type="submit"
-              disabled={send}
-              style={{ background: send ? "#001d86" : "#001d86b1" }}
-            >
-              Crear
-            </button>
-          </div>
+      <div className="div-crearNota">
+        <h2 className="negro">
+          {alumns?.data?.name} {alumns?.data?.curso} {alumns?.data?.year}
+        </h2>
+        <div>
+          {alumns?.data?.alumn?.length > 0 ? (
+            <PositionCard
+              data={alumns?.data?.alumn}
+              setAlumn={setAlumnCurrent}
+            />
+          ) : (
+            <p className="negro">cargando</p>
+          )}
         </div>
-      </form>
+        <form onSubmit={handleSubmit(formSubmit)}>
+          <div className="name-container1 form-group">
+            <label htmlFor="custom-input" className="custom-placeholder">
+              <p className="pCrearNota">Agregar nota al alumno</p>
+            </label>
+            <input
+              className="input-nota"
+              type="text"
+              id="nota"
+              name="nota"
+              autoComplete="false"
+              {...register("nota", { required: true })}
+            />
+
+            <div className="btn-container">
+              <button
+                className="btn"
+                type="submit"
+                disabled={send}
+                style={{ background: send ? "#001d86" : "#001d86b1" }}
+              >
+                Crear
+              </button>
+            </div>
+          </div>
+        </form>
+      </div>
     </div>
   );
 };
