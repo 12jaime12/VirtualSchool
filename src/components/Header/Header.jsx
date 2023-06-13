@@ -1,4 +1,4 @@
-import { NavLink } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 import { useAuth } from "../../contexts/authContext";
 import "./Header.css";
 
@@ -28,9 +28,9 @@ const Header = () => {
                     <img src={user.image} alt={user.user} />
                     <ul>
                       <li>
-                        <NavLink to="/profile">
+                        <Link to="/profile">
                           <p className="perfil">Perfil</p>
-                        </NavLink>
+                        </Link>
                       </li>
                       <li>
                         <a onClick={() => logout()}>Cerrar Sesión</a>

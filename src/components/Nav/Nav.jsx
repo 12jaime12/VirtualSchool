@@ -27,16 +27,10 @@ export const Nav = ({ rol, curso }) => {
       return (
         <>
           <div>
-            <select>
-              <NavLink to="/dashboard/alumnosasignatura">
-                <option>Alumnos asignatura</option>
-              </NavLink>
-              <NavLink to="/dashboard/crearnota">
-                <option>Crear nota</option>
-              </NavLink>
-              <NavLink to="/dashboard/borrarnota">
-                <option>Borrar nota</option>
-              </NavLink>
+            <select onChange={(e) => gotoroute(e.target.value)}>
+              <option value="alumnosasignatura">Alumnos asignatura</option>
+              <option value="crearnota">Crear nota</option>
+              <option value="borrarnota">Borrar nota</option>
             </select>
           </div>
         </>
@@ -45,14 +39,12 @@ export const Nav = ({ rol, curso }) => {
       return (
         <>
           <div>
-            <select>
+            <select onChange={(e) => gotoroute(e.target.value)}>
               <option value="crearasignatura">Crear asignatura</option>
-              <NavLink to="/dashboard/AddAlumnTeacher">
-                <option>Añadir alumno-profesor a la asignatura</option>
-              </NavLink>
-              <NavLink to="/dashboard/profesorado">
-                <option>Profesorado</option>
-              </NavLink>
+              <option value="AddAlumnTeacher">
+                Añadir alumno-profesor a la asignatura
+              </option>
+              <option value="profesorado">Profesorado</option>
             </select>
           </div>
         </>

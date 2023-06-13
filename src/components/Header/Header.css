@@ -7,6 +7,9 @@ header{
 .logoVirtualSchool img{
     width: 60px;
     margin-left: 3rem;
+	margin-top: 1rem;
+	margin-bottom: 1rem;
+	margin-right: 1rem;
 }
 .logoVirtualSchoolNo {
 	height: 10vh;
@@ -84,4 +87,10 @@ nav ul ul li {
 	float:none;
 	display:list-item;
 	position: relative;
+}
+@media screen and ( max-width: 1050px){
+	.iconoUsuario img{
+		height: 70px;
+		bottom: 0;
+	}
 }
