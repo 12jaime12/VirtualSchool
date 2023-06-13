@@ -25,7 +25,7 @@ const CrearAsignatura = () => {
         <form onSubmit={handleSubmit(formSubmit)}>
           <div className="name-container form-group">
             <input
-              className="input-user"
+              className="input-asig"
               type="text"
               id="name"
               name="name"
@@ -37,7 +37,7 @@ const CrearAsignatura = () => {
             </label>
             <div className="year-container form-group">
               <input
-                className="input-user"
+                className="input-asig"
                 type="number"
                 id="year"
                 name="year"
@@ -50,7 +50,7 @@ const CrearAsignatura = () => {
             </div>
             <div className="curso-container form-group">
               <input
-                className="input-user"
+                className="input-asig"
                 type="text"
                 id="curso"
                 name="curso"

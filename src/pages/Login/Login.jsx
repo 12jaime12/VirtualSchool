@@ -39,7 +39,7 @@ const Login = () => {
         <form onSubmit={handleSubmit(formSubmit)}>
           <div className="email-container form-group">
             <input
-              className="input-user"
+              className="input-login"
               type="email"
               id="name"
               name="name"
@@ -49,19 +49,19 @@ const Login = () => {
             <label htmlFor="custom-input" className="custom-placeholder">
               Email
             </label>
-            <div className="password-container form-group">
-              <input
-                className="input-user"
-                type="password"
-                id="password"
-                name="password"
-                autoComplete="false"
-                {...register("password", { required: true })}
-              />
-              <label htmlFor="custom-input" className="custom-placeholder">
-                Contraseña
-              </label>
-            </div>
+          </div>
+          <div className="password-container form-group">
+            <input
+              className="input-login"
+              type="password"
+              id="password"
+              name="password"
+              autoComplete="false"
+              {...register("password", { required: true })}
+            />
+            <label htmlFor="custom-input" className="custom-placeholder">
+              Contraseña
+            </label>
           </div>
 
           <div className="btn-container">
@@ -77,14 +77,18 @@ const Login = () => {
           <p className="buttom-text">
             <small>
               ¿No recuerdas tu contraseña?
-              <Link to="/forgotpassword" className="anchorCustom"> Cambio de contraseña</Link>
+              <Link to="/forgotpassword" className="anchorCustom">
+                {" "}
+                Cambio de contraseña
+              </Link>
             </small>
           </p>
         </form>
       </div>
       <div className="footer-form">
         <p className="parrafoLogin">
-          ¿Aún no estás registrado?<Link to="/register"> Regístrate aquí</Link>
+          ¿Aún no estás registrado?
+          <Link to="/register"> Regístrate aquí</Link>
         </p>
       </div>
     </>

@@ -35,14 +35,14 @@ small{
   font-weight: bolder;
 }
 
-  .form-container .form-group label {
+  .input-login {
     color: #001d86;
     font-weight: normal;
   }
 
   
-  .form-container .form-group input {
-    width: 100%;
+  .input-login {
+    width: 100% !important;
     padding: 10px;
     border: #ddd 1px solid;
     border-radius: 5px;
@@ -51,9 +51,11 @@ small{
     caret-color: #001d86;
   }
 
-  .form-container .form-group input:focus {
+  .input-login:focus {
     outline-color: #001d86;
   }
+  
+  
 
   .btn-container{
     display: flex;

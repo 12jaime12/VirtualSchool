@@ -29,7 +29,7 @@
   font-weight: normal;
 }
 
-.input-user{
+.input-asig{
   width: 100%;
   padding: 10px;
   border: #ddd 1px solid;
@@ -38,6 +38,6 @@
   caret-color: #001d86;
 }
 
-.input-user:focus{
+.input-asig:focus{
   outline-color: #001d86;
 }
