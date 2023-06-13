@@ -24,6 +24,9 @@ import AñadirAlumnoProfesor from "./components/AñadirAlumnoProfesor/AñadirAlu
 import Profesorado from "./components/Profesorado/Profesorado.jsx";
 import AddAlumnTeacher from "./pages/AddALumnTeacher/AddAlumnTeacher.jsx";
 import AsignaturaSelect from "./components/AsignaturaSelect/AsignaturaSelect.jsx";
+import ProfileHome from "./components/ProfileHome/ProfileHome.jsx";
+import FormProfile from "./components/FormProfile/FormProfile.jsx";
+import ChangePassword from "./components/ChangePassword/ChangePassword.jsx";
 
 ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
@@ -35,14 +38,14 @@ ReactDOM.createRoot(document.getElementById("root")).render(
             <Route path="/login" element={<Login />} />
             <Route path="/register" element={<Register />} />
             <Route path="/verifyCode" element={<CheckCode />} />
-            <Route
-              path="/profile"
-              element={
-                <Protected>
-                  <Profile />
-                </Protected>
-              }
-            />
+            <Route path="/profile" element={<Profile />}>
+              <Route index element={<ProfileHome />} />
+              <Route path="/profile/formProfile" element={<FormProfile />} />
+              <Route
+                path="/profile/changePassword"
+                element={<ChangePassword />}
+              />
+            </Route>
             <Route path="/forgotpassword" element={<ForgotPassword />} />
             <Route path="/dashboard" element={<Dashboard />}>
               <Route index element={<Horario />} />

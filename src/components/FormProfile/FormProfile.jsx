@@ -1,10 +1,11 @@
 import "./FormProfile.css";
 import useUpdateError from "../../hooks/useUpdateError";
 import { useAuth } from "../../contexts/authContext";
-import { useEffect, useState } from "react";
+import React, { useEffect, useState } from "react";
 import Swal from "sweetalert2";
 import FigureUser from "../FigureUser/FigureUser";
 import { useForm } from "react-hook-form";
+
 import { updateUser } from "../../service/API_proyect/user.service";
 import Uploadfile from "../UploadFile/UploadFile";
 
@@ -79,7 +80,8 @@ const FormProfile = () => {
                 className="btn"
                 type="submit"
                 disabled={send}
-                style={{ background: send ? "#49c1a388" : "#49c1a2" }}>
+                style={{ background: send ? "#49c1a388" : "#49c1a2" }}
+              >
                 Cambiar datos de usuario
               </button>
             </div>

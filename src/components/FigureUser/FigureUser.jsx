@@ -1,3 +1,4 @@
+import React from "react";
 import "./FigureUser.css";
 
 const FigureUser = (user) => {

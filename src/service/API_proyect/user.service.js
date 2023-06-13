@@ -105,3 +105,15 @@ export const getAllAlumn = async (id) => {
       return error;
     });
 };
+//------------change-password----------------
+export const changePassword = async (formData) => {
+  return API.patch("/user/changePassword", formData, {
+    headers: {
+      Authorization: `Bearer ${updateToken()}`,
+    },
+  })
+    .then((res) => res)
+    .catch((error) => {
+      return error;
+    });
+};

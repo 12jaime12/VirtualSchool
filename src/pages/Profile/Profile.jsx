@@ -1,3 +1,4 @@
+import { NavLink, Navigate, Outlet } from "react-router-dom";
 import "./Profile.css";
 
 import React from "react";
@@ -9,15 +10,19 @@ const Profile = () => {
         <div className="options">
           <ul>
             <li>
-              <p>Cambiar Contraseña</p>
+              <NavLink to="/profile/formProfile">
+                <p>Actualizar perfil</p>
+              </NavLink>
             </li>
             <li>
-              <p>Actualizar perfil</p>
+              <NavLink to="/profile/changePassword">
+                <p>Cambiar Contraseña</p>
+              </NavLink>
             </li>
           </ul>
         </div>
         <div className="content">
-          <p>profile</p>
+          <Outlet />
         </div>
       </div>
     </>
