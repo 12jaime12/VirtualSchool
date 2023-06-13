@@ -57,8 +57,8 @@ const ChangePassword = () => {
   return (
     <>
       <div className="form-wrap">
-        <h1>Change your password ♻</h1>
-        <p>Please, enter your old and new passwords</p>
+        <h1>Cambia tu contraseña</h1>
+        <p>Por favor, introduce tu antigua contraseña y tu nueva contraseña</p>
         <form onSubmit={handleSubmit(formSubmit)}>
           <div className="password_container form-group">
             <input
@@ -70,7 +70,7 @@ const ChangePassword = () => {
               {...register("password", { required: true })}
             />
             <label htmlFor="custom-input" className="custom-placeholder">
-              old password
+              Antigua contraseña
             </label>
           </div>
           <div className="newPassword_container form-group">
@@ -83,7 +83,7 @@ const ChangePassword = () => {
               {...register("newPassword", { required: true })}
             />
             <label htmlFor="custom-input" className="custom-placeholder">
-              new password
+              Nueva contraseña
             </label>
           </div>
           <div className="confirmPassword_container form-group">
@@ -96,7 +96,7 @@ const ChangePassword = () => {
               {...register("confirmPassword", { required: true })}
             />
             <label htmlFor="custom-input" className="custom-placeholder">
-              confirm new password
+              Confirmar nueva contraseña
             </label>
           </div>
           <div className="btn_container">
@@ -104,9 +104,9 @@ const ChangePassword = () => {
               className="btn"
               type="submit"
               disabled={send}
-              style={{ background: send ? "#49c1a388" : "#49c1a2" }}
+              style={{ background: send ? "#001d86" : "#001d86b1" }}
             >
-              CHANGE PASSWORD
+              Cambiar Contraseña
             </button>
           </div>
         </form>

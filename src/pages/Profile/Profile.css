@@ -1,7 +1,7 @@
 .profile{
     display: flex;
-    
 } 
+
 .options{
     background-color: #296ab1;
     border-radius: 0 10px 10px 0;
@@ -10,6 +10,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    
 }
 .options p{
     color: white;
@@ -27,11 +28,13 @@
     color: black;
     background-color: white;
 }
+
 .options p:focus{
     border-radius: 10px;
     color: black;
     background-color: white;
 }
+
 
 
 .options li{
@@ -45,8 +48,7 @@
 .content{
     width: 80vw;
     min-height: 80vh;
-    border-top: 3px solid white;
-    border-bottom: 3px solid white;
-    border-left: 3px solid white;
-    
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }

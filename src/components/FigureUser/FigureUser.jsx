@@ -5,7 +5,7 @@ const FigureUser = (user) => {
   return (
     <figure className="photoProfile">
       <img src={user.user.image} alt="photo user" className="photoUser" />
-      <h3 className="emailUser">email: {user.user.email}</h3>
+      <h4 className="emailUser">Email: {user.user.email}</h4>
     </figure>
   );
 };

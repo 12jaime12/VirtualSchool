@@ -21,18 +21,20 @@
     align-items: center;
     text-align: center;
 }
-.link:hover{
+.navlink:hover{
     text-decoration: none;
 }
 .optionsD p:hover{
     border-radius: 10px;
     color: black;
     background-color: white;
+    text-decoration: none;
 }
 .active p{
     border-radius: 10px;
     color: black;
     background-color: white;
+    text-decoration: none;
 }
 
 .optionsD li{

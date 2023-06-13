@@ -4,9 +4,9 @@ import "./ProfileHome.css";
 const ProfileHome = () => {
   const { user } = useAuth();
   return (
-    <div>
-      <h3 className="negro">
-        Bienvenido {user.name} a tu perfil aqui podras cambiar tus datos
+    <div className="fraseProfileHome">
+      <h3 className="saludoProfile">
+        Bienvenido a tu perfil {user.user}, aquí podrás cambiar tus datos
         personales
       </h3>
     </div>

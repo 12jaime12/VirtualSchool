@@ -54,11 +54,12 @@ const FormProfile = () => {
   return (
     <>
       <div className="containerProfile">
+      <h1>Cambia tus datos de perfil</h1>
         <div className="containerPhotoUser">
           <FigureUser user={user} />
         </div>
         <div className="form-Wrap formProfile">
-          <h1>Cambia tus datos de perfil</h1>
+    
           <h3>Por favor, introduce tus nuevos datos de perfil</h3>
           <form onSubmit={handleSubmit(formSubmit)}>
             <div className="containerUser form-group">
@@ -80,7 +81,7 @@ const FormProfile = () => {
                 className="btn"
                 type="submit"
                 disabled={send}
-                style={{ background: send ? "#49c1a388" : "#49c1a2" }}
+                style={{ background: send ? "#001d86" : "#001d86b1" }}
               >
                 Cambiar datos de usuario
               </button>

@@ -1,3 +1,18 @@
-.negro{
-    color: black;
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+
+.fraseProfileHome{
+    background: #1a50898e;
+    padding: 15px 25px 30px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
+
+
+
+  

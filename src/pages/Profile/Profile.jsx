@@ -6,7 +6,8 @@ import React from "react";
 const Profile = () => {
   return (
     <>
-      <div className="profile">
+    <div className="fondo">
+    <div className="profile">
         <div className="options">
           <ul>
             <li>
@@ -25,6 +26,7 @@ const Profile = () => {
           <Outlet />
         </div>
       </div>
+    </div>
     </>
   );
 };
