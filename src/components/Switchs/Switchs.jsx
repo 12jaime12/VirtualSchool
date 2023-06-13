@@ -1,10 +1,10 @@
 import React, { useEffect } from "react";
-import Horario1 from "./HorarioEscolar/Horario1/Horario1";
-import Horario2 from "./HorarioEscolar/Horario2/Horario2";
-import Horario3 from "./HorarioEscolar/Horario3/Horario3";
-import Horario4 from "./HorarioEscolar/Horario4/Horario4";
+import Horario1 from "../HorarioEscolar/Horario1/Horario1";
+import Horario2 from "../HorarioEscolar/Horario2/Horario2";
+import Horario3 from "../HorarioEscolar/Horario3/Horario3";
+import Horario4 from "../HorarioEscolar/Horario4/Horario4";
 import { Link, NavLink } from "react-router-dom";
-
+import "./Switchs.css";
 export const SwitchHorarios = ({ curso }) => {
   switch (curso) {
     case "1ESO":

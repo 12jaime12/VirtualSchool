@@ -2,7 +2,7 @@ import "./Dashboard.css";
 
 import React, { useEffect, useState } from "react";
 
-import { SwitchHorarios, SwitchRol } from "../../components/Switchs";
+import { SwitchHorarios, SwitchRol } from "../../components/Switchs/Switchs";
 import { useAuth } from "../../contexts/authContext";
 import { Outlet } from "react-router-dom";
 import { Nav } from "../../components/Nav/Nav";

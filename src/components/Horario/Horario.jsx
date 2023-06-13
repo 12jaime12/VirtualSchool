@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
-import { SwitchHorarios } from "../Switchs";
 import { getCursoActual } from "../../service/API_proyect/user.service";
+import { SwitchHorarios } from "../Switchs/Switchs";
 
 export const Horario = () => {
   const [curso, setCurso] = useState({});
