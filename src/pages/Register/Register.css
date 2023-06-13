@@ -12,6 +12,13 @@ body {
   line-height: 1.8;
 }
 
+.fondoRegister{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
 .parrafoLogin {
   margin-bottom: 40px;
 }
@@ -43,7 +50,7 @@ a {
 .form-wrap h1,
 .form-wrap p {
   text-align: center;
-  color: #001d86;
+  color: white;
   font-weight: bolder;
 }
 
@@ -52,7 +59,7 @@ a {
 }
 
 .form-wrap .form-group label {
-  color: #001d86;
+  color: white;
   font-weight: normal;
 }
 

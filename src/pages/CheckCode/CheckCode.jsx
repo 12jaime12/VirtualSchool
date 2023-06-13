@@ -57,7 +57,8 @@ const CheckCode = () => {
   }
   return (
     <>
-      <div className="form-wrap">
+    <div className="fondo">
+    <div className="form-wrap">
         <h1>Verificación de código</h1>
         <p>Escribe el código que has recibido a tu correo electrónico</p>
         <form onSubmit={handleSubmit(formSubmit)}>
@@ -106,6 +107,7 @@ const CheckCode = () => {
           </p>
         </form>
       </div>
+    </div>
     </>
   );
 };

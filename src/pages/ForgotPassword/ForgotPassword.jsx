@@ -26,7 +26,8 @@ const ForgotPassword = () => {
 
   return (
     <>
-      <div className="form-wrap">
+    <div className="fondo">
+    <div className="form-wrap">
         <h1>Cambio de contraseña</h1>
   
         <form onSubmit={handleSubmit(formSubmit)}>
@@ -60,6 +61,7 @@ const ForgotPassword = () => {
           </p>
         </form>
       </div>
+    </div>
     </>
   );
 };

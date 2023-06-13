@@ -44,7 +44,8 @@ const Register = () => {
 
   return (
     <>
-      <div className="form-wrap">
+    <div className="fondo fondoRegister">
+    <div className="form-wrap">
         <h1>REGÍSTRATE</h1>
         <p>Es necesario tener una cuenta para acceder a tu Virtual School.</p>
         <form onSubmit={handleSubmit(formSubmit)}>
@@ -139,6 +140,7 @@ const Register = () => {
           ¿Ya tienes cuenta? <Link to="/login">Accede a tu cuenta aquí.</Link>
         </p>
       </div>
+    </div>
     </>
   );
 };

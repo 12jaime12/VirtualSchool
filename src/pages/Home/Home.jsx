@@ -8,7 +8,8 @@ const Home = () => {
   const navigate = useNavigate();
 
   return (
-    <div className="homeContainer">
+    <div className="fondo">
+      <div className="homeContainer">
       {user !== null ? (
         <h1 className="titleHome">Bienvenido {user.user}</h1>
       ) : (
@@ -22,6 +23,8 @@ const Home = () => {
         </>
       )}
     </div>
+    </div>
+  
   );
 };
 

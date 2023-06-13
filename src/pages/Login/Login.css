@@ -8,6 +8,13 @@
     line-height: 1.8;
   }
 
+  .fondoLogin{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
   .form-container{
     display: flex;
     flex-direction: column;
@@ -22,17 +29,18 @@
   .form-container h1,
 .form-container p {
   text-align: center;
-  color: #001d86;
+  color: white;
   font-weight: bolder;
 }
 
 small{
-  color:#001d86;
+  color:white;
   font-weight: normal;
 }
 
-.anchorCustom, a{
+.anchorCustom{
   font-weight: bolder;
+  color: white;
 }
 
   .input-login {

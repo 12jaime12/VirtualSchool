@@ -33,7 +33,8 @@ const Login = () => {
 
   return (
     <>
-      <div className="form-container">
+    <div className="fondo fondoLogin">
+    <div className="form-container">
         <h1>Acceso</h1>
         <p>Bienvenidos a Virtual School</p>
         <form onSubmit={handleSubmit(formSubmit)}>
@@ -91,6 +92,7 @@ const Login = () => {
           <Link to="/register"> Regístrate aquí</Link>
         </p>
       </div>
+    </div>
     </>
   );
 };

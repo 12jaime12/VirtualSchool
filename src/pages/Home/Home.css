@@ -3,6 +3,15 @@
     margin: 0;
     padding: 0;
   }
+
+  .fondo{
+    width: 100vw;
+    min-height: 80vh;
+    background-image: url(https://res.cloudinary.com/dpkqzc5zh/image/upload/v1686571668/Disen%CC%83o_sin_ti%CC%81tulo_1_nio5qg.png);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
   
   .homeContainer {
     display: flex;
@@ -28,6 +37,6 @@
 
   h1.titleHome{
     font-weight: 100;
-    color: #001d86;
+    color: white;
   }
 
