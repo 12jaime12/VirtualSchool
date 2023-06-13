@@ -52,4 +52,25 @@
     border-left: 3px solid white;
     
 }
+.dashboard2{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.nav-select{
+    width: 100vw;
+    height: 10vh;
+    background-color: #296ab1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.contentD-mobile{
+    width: 100vw;
+    min-height: 70vh;
+    display: flex;
+    flex-direction: column;
+}
 
