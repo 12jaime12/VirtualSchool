@@ -60,11 +60,11 @@ const FormProfile = () => {
         </div>
         <div className="form-Wrap formProfile">
     
-          <h3>Por favor, introduce tus nuevos datos de perfil</h3>
+          <h3>Por favor, introduce tus nuevos datos de perfil:</h3>
           <form onSubmit={handleSubmit(formSubmit)}>
             <div className="containerUser form-group">
               <input
-                className="input-user"
+                className="input-profile"
                 type="text"
                 id="name"
                 autoComplete="false"
@@ -76,7 +76,7 @@ const FormProfile = () => {
               </label>
             </div>
             <Uploadfile />
-            <div className="btn_container">
+            <div className="btn_containeProfile">
               <button
                 className="btn"
                 type="submit"

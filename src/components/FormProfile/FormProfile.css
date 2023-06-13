@@ -14,3 +14,20 @@
     border-radius: 5px;
 }
 
+.input-profile{
+    width: 100% !important;
+    padding: 10px;
+    border: #ddd 1px solid;
+    border-radius: 5px;
+    font-family: inherit;
+    font-size: inherit;
+}
+
+.btn_containeProfile{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   padding: 1rem; 
+}
+
+
