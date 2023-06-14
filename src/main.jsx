@@ -22,11 +22,11 @@ import BorrarNota from "./components/BorrarNota/BorrarNota.jsx";
 import CrearAsignatura from "./components/CrearAsignatura/CrearAsignatura.jsx";
 import AñadirAlumnoProfesor from "./components/AñadirAlumnoProfesor/AñadirAlumnoProfesor.jsx";
 import Profesorado from "./components/Profesorado/Profesorado.jsx";
-import AddAlumnTeacher from "./pages/AddALumnTeacher/AddAlumnTeacher.jsx";
 import AsignaturaSelect from "./components/AsignaturaSelect/AsignaturaSelect.jsx";
 import ProfileHome from "./components/ProfileHome/ProfileHome.jsx";
 import FormProfile from "./components/FormProfile/FormProfile.jsx";
 import ChangePassword from "./components/ChangePassword/ChangePassword.jsx";
+import AddAlumnTeacher from "./pages/AddAlumnTeacher/AddAlumnTeacher.jsx";
 
 ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
