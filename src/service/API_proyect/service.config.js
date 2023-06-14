@@ -11,7 +11,7 @@ const APIHeaders = {
 };
 
 export const API = axios.create({
-  baseURL: `http://localhost:8087/api/v1`,
+  baseURL: `https://proyecto-node-theta.vercel.app/api/v1`,
   headers: APIHeaders,
   timeout: 60000,
 });
