@@ -1,5 +1,5 @@
 import React, { useEffect } from "react";
-import "./Uploadfile.css";
+import "./UploadFile.css";
 import { useForm } from "react-hook-form";
 const Uploadfile = ({ registerForm }) => {
   const { register, handleSubmit } = useForm();
