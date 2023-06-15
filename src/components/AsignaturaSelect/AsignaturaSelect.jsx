@@ -14,6 +14,7 @@ import PositionCard from "../PositionCard/PositionCard";
 import Pagination from "@mui/material/Pagination";
 import Stack from "@mui/material/Stack";
 import { paginacion } from "../../util/paginacion";
+import Swal from "sweetalert2";
 
 const AsignaturaSelect = () => {
   const [asignatura, setAsignatura] = useState({ data: [] });
@@ -23,6 +24,8 @@ const AsignaturaSelect = () => {
   const [numeroP, setNumeroP] = useState(0);
   const [filterData, setFilterData] = useState([]);
   const { id } = useParams();
+  const [resTeacher, setResTeacher] = useState({});
+  const [resAlumn, setResAlumn] = useState({});
 
   const handleChange = (e, value) => {
     const tope = value * 3;
@@ -33,11 +36,11 @@ const AsignaturaSelect = () => {
   const añadirAlumn = async (idalumn) => {
     console.log(idalumn._id);
     const formData = { idAlumn: idalumn._id };
-    await addAlumn(id, formData);
+    setResAlumn(await addAlumn(id, formData));
   };
   const addTeacher = async () => {
     const formData = { idteacher: teacherCurrent };
-    await addNewTeacher(id, formData);
+    setResTeacher(await addNewTeacher(id, formData));
   };
   useEffect(() => {
     (async () => {
@@ -57,6 +60,29 @@ const AsignaturaSelect = () => {
     setNumeroP(paginacion(alumns?.data, 3));
   }, [alumns]);
 
+  useEffect(() => {
+    console.log(resTeacher);
+    if (resTeacher?.status == 200) {
+      Swal.fire({
+        icon: "success",
+        title: "Profesor Añadido",
+        showConfirmButton: false,
+        timer: 1500,
+      });
+    }
+  }, [resTeacher]);
+
+  useEffect(() => {
+    console.log(resAlumn);
+    if (resAlumn?.status == 200) {
+      Swal.fire({
+        icon: "success",
+        title: "Alumno Añadido",
+        showConfirmButton: false,
+        timer: 1500,
+      });
+    }
+  }, [resAlumn]);
   return (
     <div className="asignaturaselect">
       <h1>

@@ -2,16 +2,31 @@ import React, { useEffect, useRef, useState } from "react";
 import "./CrearAsignatura.css";
 import { useForm } from "react-hook-form";
 import { createAsignatura } from "../../service/API_proyect/asignaturas.service";
+import Swal from "sweetalert2";
+
 const CrearAsignatura = () => {
   const { register, handleSubmit } = useForm();
   const [send, setSend] = useState(false);
+  const [res, setRes] = useState({});
 
   const formSubmit = async (formData) => {
     setSend(true);
-    await createAsignatura(formData);
+    setRes(await createAsignatura(formData));
 
     setSend(false);
   };
+
+  useEffect(() => {
+    console.log(res);
+    if (res?.status == 200) {
+      Swal.fire({
+        icon: "success",
+        title: "Asignatura Creada",
+        showConfirmButton: false,
+        timer: 1500,
+      });
+    }
+  }, [res]);
 
   // useEffect(() => {
   //   if (res?.status === 200) {

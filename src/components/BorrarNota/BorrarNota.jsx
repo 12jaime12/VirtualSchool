@@ -6,14 +6,15 @@ import {
 import PositionCard from "../PositionCard/PositionCard";
 import "./BorrarNota.css";
 import React, { useEffect, useState } from "react";
-
+import Swal from "sweetalert2";
 const BorrarNota = () => {
   const [notas, setNotas] = useState({ data: { notasAlumns: [] } });
   const [alumnCurrent, setAlumnCurrent] = useState("");
   //const [actualizar, setActualizar] = useState(0);
+  const [res, setRes] = useState({});
 
   const borrar = async () => {
-    await deleteNotas(alumnCurrent);
+    setRes(await deleteNotas(alumnCurrent));
     //setActualizar(actualizar + 1);
   };
 
@@ -30,6 +31,19 @@ const BorrarNota = () => {
   useEffect(() => {
     console.log(notas?.data.notasAlumns);
   }, [notas]);
+
+  useEffect(() => {
+    console.log(res);
+    if (res?.status == 200) {
+      Swal.fire({
+        icon: "success",
+        title: "Nota Borrada",
+        showConfirmButton: false,
+        timer: 1500,
+      });
+    }
+  }, [res]);
+
   return (
     <>
       <div className="borrarnota">

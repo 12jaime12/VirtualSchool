@@ -4,17 +4,18 @@ import PositionCard from "../PositionCard/PositionCard";
 import "./CrearNota.css";
 import React, { useEffect, useState } from "react";
 import { createNota } from "../../service/API_proyect/notas.service";
+import Swal from "sweetalert2";
 
 const CrearNota = () => {
   const [alumns, setAlumns] = useState({ data: { alumn: [] } });
   const [alumnCurrent, setAlumnCurrent] = useState("");
   const { register, handleSubmit } = useForm();
   const [send, setSend] = useState(false);
-
+  const [res, setRes] = useState({});
   const formSubmit = async (FormData) => {
     setSend(true);
     const data = { ...FormData, alumn: alumnCurrent };
-    await createNota(data);
+    setRes(await createNota(data));
     setSend(false);
   };
 
@@ -25,11 +26,27 @@ const CrearNota = () => {
   }, []);
 
   useEffect(() => {
-    console.log(alumnCurrent);
-  }, [alumnCurrent]);
+    console.log(res);
+    if (res?.status == 200) {
+      Swal.fire({
+        icon: "success",
+        title: "Nota Creada",
+        showConfirmButton: false,
+        timer: 1500,
+      });
+    }
+  }, [res]);
 
   useEffect(() => {
-    console.log(alumns?.data?.alumn);
+    console.log(alumns);
+    // if (alumns?.status == 200) {
+    //   Swal.fire({
+    //     icon: "success",
+    //     title: "Nota Creada",
+    //     showConfirmButton: false,
+    //     timer: 1500,
+    //   });
+    // }
   }, [alumns]);
   return (
     <div className="crearnota">
